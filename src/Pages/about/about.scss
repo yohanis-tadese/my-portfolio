@@ -1,0 +1,184 @@
+@import "../../responsive.scss";
+
+.about {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  background-color: #f5f8fd;
+  padding-left: 83px;
+  padding-top: 70px;
+
+  @include md {
+    padding-left: 23px;
+    padding-top: 65px;
+  }
+  @include md {
+    padding-left: 23px;
+    padding-top: 60px;
+  }
+
+  .about-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h2 {
+      font-size: 2em;
+      position: relative;
+
+      @include md {
+        font-size: 1.6em;
+      }
+
+      @include sm {
+        font-size: 1.4em;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 9rem;
+        top: 42px;
+        left: 0;
+        bottom: 5px;
+        height: 2.4px;
+        background-color: #febd01;
+
+        @include sm {
+          width: 7rem;
+          top: 30px;
+        }
+
+        @include md {
+          width: 8rem;
+          top: 39px;
+        }
+      }
+    }
+  }
+
+  .about-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4em;
+    margin-top: 10px;
+
+    @include lg {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-detail {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 2em;
+      text-align: justify;
+      padding-right: 20px;
+
+      @include lg {
+        padding-right: 50px;
+      }
+
+      @include md {
+        margin-top: 1.4em;
+      }
+
+      @include sm {
+        margin-top: 0.7em;
+      }
+
+      h2 {
+        font-size: 1.7em;
+        position: relative;
+
+        @include md {
+          font-size: 1.4em;
+        }
+
+        @include sm {
+          font-size: 1.2em;
+        }
+      }
+
+      h3 {
+        font-size: 1.3em;
+        position: relative;
+
+        @include md {
+          font-size: 1.1em;
+        }
+
+        @include sm {
+          font-size: 0.9em;
+        }
+      }
+
+      span {
+        line-height: 27px;
+        font-size: 15px;
+
+        @include md {
+          line-height: 25px;
+          font-size: 14px;
+        }
+
+        @include sm {
+          line-height: 23px;
+          font-size: 12px;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 10px;
+        margin-top: 10px;
+
+        li {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          font-size: 14px;
+
+          &:first-child {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+          }
+
+          i {
+            font-style: normal;
+            font-weight: 555;
+          }
+        }
+      }
+    }
+
+    .about-image {
+      flex: 1.2;
+      margin-right: 10px;
+
+      img {
+        border: 2px solid #febd01;
+        border-radius: 10%;
+        margin-top: 20px;
+        width: 20em;
+
+        @include lg {
+          width: 18em;
+        }
+
+        @include md {
+          width: 20em;
+          margin-top: -30px;
+        }
+
+        @include sm {
+          width: 16em;
+          margin-top: -30px;
+        }
+      }
+    }
+  }
+}

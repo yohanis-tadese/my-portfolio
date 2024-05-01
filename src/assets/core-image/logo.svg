@@ -1,0 +1,30 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  width="12%"
+  height="12%"
+  viewBox="0 0 84 96"
+>
+  <g id="ABC" transform="translate(-8.000000, -2.000000)">
+    <g transform="translate(11.000000, 5.000000)">
+      <polygon
+        id="Shape"
+        stroke="#64FFDA"
+        stroke-width="4"
+        fill="#112240"
+        points="39 0 0 22 0 67 39 90 78 68 78 23"
+      ></polygon>
+    </g>
+    <text
+      x="50"
+      y="60"
+      font-size="30px"
+      font-weight="500"
+      font-family="sans-serif"
+      fill="#64FFDA"
+      text-anchor="middle"
+    >
+      YT
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,102 @@
+@import "../../responsive.scss";
+
+.homepage {
+  display: flex;
+  width: 100%;
+  z-index: 999;
+  height: 100vh;
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2.4;
+    padding-top: 70px;
+    padding-left: 70px;
+    margin: 70px 5px 10px 10px;
+
+    @include md {
+      padding-right: 20px;
+      padding-left: 15px;
+      gap: 6px;
+      margin-top: 40px;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 38px;
+
+      @include md {
+        font-size: 36px;
+      }
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 32px;
+
+      @include md {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    .buttons {
+      @include md {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin: 10px auto;
+      }
+      .btn {
+        padding: 12px 36px;
+        font-size: 15px;
+        margin-top: 20px;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        cursor: pointer;
+
+        @include md {
+          font-size: 17px;
+          padding: 12px 42px;
+        }
+      }
+      .button-one {
+        margin-right: 20px;
+        background-color: #ffae19;
+        border-top-left-radius: 10px;
+        @include md {
+          margin: 0;
+        }
+      }
+
+      .button-two {
+        background-color: #2f3450;
+        border-top-right-radius: 10px;
+      }
+    }
+
+    @include lg {
+      flex: 3;
+    }
+  }
+
+  .right-side {
+    flex: 2.7;
+
+    img {
+      width: 100%;
+      height: 100vh;
+    }
+
+    @include lg {
+      display: none;
+    }
+  }
+}

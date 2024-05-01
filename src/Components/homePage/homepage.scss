@@ -1,0 +1,102 @@
+@import "../../responsive.scss";
+
+.homepage {
+  display: flex;
+  width: 100%;
+  z-index: 1800;
+  height: 100vh;
+
+  .left-side {
+    background-image: url("../../assets/core-image/hero-top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 2.4;
+    padding-top: 70px;
+    padding-left: 70px;
+    margin: 70px 5px 10px 10px;
+
+    @include md {
+      padding-left: 15px;
+      gap: 6px;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 56px;
+
+      @include md {
+        font-size: 32px;
+      }
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 32px;
+      width: 75%;
+
+      @include lg {
+        font-size: 16px;
+        line-height: 28px;
+        width: 80%;
+      }
+
+      @include md {
+        font-size: 16px;
+        line-height: 28px;
+        width: 85%;
+      }
+
+      @include sm {
+        font-size: 16px;
+        line-height: 28px;
+        width: 100%;
+      }
+    }
+
+    .buttons {
+      @include md {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin: 10px auto;
+      }
+      .btn {
+        padding: 16px 48px;
+        font-size: 15px;
+        margin-top: 20px;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 2px;
+        cursor: pointer;
+
+        @include md {
+          font-size: 17px;
+          padding: 12px 42px;
+        }
+      }
+      .button-one {
+        margin-right: 20px;
+        background-color: #ffae19;
+        border-top-left-radius: 10px;
+        @include md {
+          margin: 0;
+        }
+      }
+
+      .button-two {
+        background-color: #2f3450;
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+}
