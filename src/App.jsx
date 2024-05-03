@@ -6,6 +6,8 @@ import Portfolio from "./Components/portfolio/Portfolio";
 import Services from "./Components/service/Service";
 import SideBar from "./Components/sideBar/SideBar";
 import Resume from "./Components/resume/Resume";
+import Contact from "./Components/contact/Contact";
+import Footer from "./Components/footer/Footer";
 // import Archive from "./Components/Archive/Archive";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Resume />
       <Portfolio />
       {/* <Archive /> */}
+      <Contact />
+      <Footer />
     </div>
   );
 }
