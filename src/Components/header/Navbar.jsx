@@ -15,7 +15,14 @@ function Navbar() {
       const sectionOffsets = {};
 
       // Calculate the offsetTop for each section
-      const sections = ["home", "about", "skill", "portfolio", "contact"];
+      const sections = [
+        "home",
+        "about",
+        "skill",
+        "resume",
+        "project",
+        "contact",
+      ];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -92,14 +99,26 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="portfolio"
+                to="resume"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={1200}
-                className={activeSection === "portfolio" ? "active" : ""}
+                className={activeSection === "resume" ? "active" : ""}
               >
-                Portfolio
+                Resume
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1200}
+                className={activeSection === "project" ? "active" : ""}
+              >
+                project
               </Link>
             </li>
             <li>
@@ -115,12 +134,16 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <div className="menu">
-            <img src={menu} alt="" onClick={() => setOpen((prev) => !prev)} />
+          <div className="menu-responsive">
+            <img
+              src={menu}
+              alt="menu-icone"
+              onClick={() => setOpen((prev) => !prev)}
+            />
           </div>
         </div>
       </nav>
-      <div className={open ? "menu-list" : "menu-not-active"}>
+      <div className={open ? "menu-lists" : "menu-not-active"}>
         <ul>
           <li>
             <Link
@@ -160,14 +183,26 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to="portfolio"
+              to="resume"
               spy={true}
               smooth={true}
               offset={-70}
               duration={1000}
               onClick={() => setOpen(false)}
             >
-              Portfolio
+              project
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="project"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              onClick={() => setOpen(false)}
+            >
+              project
             </Link>
           </li>
           <li>

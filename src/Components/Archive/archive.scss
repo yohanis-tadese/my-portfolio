@@ -1,0 +1,31 @@
+@import "../../responsive.scss";
+
+.Archived {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  background-color: #f5f8fd;
+  padding-left: 8%;
+  padding-top: 67px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+  @include md {
+    font-size: 1.6em;
+  }
+
+  @include sm {
+    font-size: 1.4em;
+  }
+}
+
+// .archivecard {
+//   &:hover {
+//     color: black;
+//     // background-color: #64ffda;
+
+//     div {
+//       color: black;
+//     }
+//   }
+// }

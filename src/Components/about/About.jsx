@@ -5,9 +5,8 @@ import SectionTitle from "../SectionTitle";
 function About() {
   return (
     <div id="about" className="about">
-      <div className="about-title">
-        <h2>About Me</h2>
-        <SectionTitle title="Some Things about me" />
+      <div className="portfolio-title">
+        <SectionTitle title="About me" />
       </div>
       <div className="about-content">
         <div className="about-image">

@@ -57,9 +57,9 @@ nav {
           color: #64ffda;
         }
 
-        // .active {
-        //   color: #64ffda;
-        // }
+        .active {
+          color: #64ffda;
+        }
 
         &:hover,
         &:focus,
@@ -82,18 +82,15 @@ nav {
   }
 }
 
-.menu {
+.menu-responsive {
   display: none;
-  z-index: 999;
+  z-index: 1400;
   position: relative;
 
   img {
     width: 36px;
     height: 36px;
     cursor: pointer;
-    position: absolute;
-    top: -20px;
-    right: 20px;
   }
 
   @include md {
@@ -101,7 +98,7 @@ nav {
   }
 }
 
-.menu-list {
+.menu-lists {
   ul {
     list-style-type: none;
     display: flex;

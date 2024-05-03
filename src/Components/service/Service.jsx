@@ -8,11 +8,9 @@ function Service() {
   return (
     <div id="service" className="service">
       <div className="service_title">
-        <h2 style={{ textTransform: "uppercase", textAlign: "center" }}>
-          core services
-        </h2>
-        <SectionTitle title="core services" titleNo="02" />
+        <SectionTitle title="core services" />
       </div>
+
       <div className="service-container">
         <div className="service-box">
           <span>

@@ -24,15 +24,34 @@
       font-size: 1.8em;
       color: #222222;
       font-weight: 700;
-      font-family: var(--font-base4);
-    }
+      font-family: var(--font-base5);
 
-    @include md {
-      font-size: 1.4em;
-    }
+      @include md {
+        font-size: 1.4em;
+      }
 
-    @include sm {
-      font-size: 1.2em;
+      @include sm {
+        font-size: 1.2em;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 8.4rem;
+        top: 100%;
+        left: 45%;
+        bottom: 5px;
+        height: 2.4px;
+        background-color: #64ffda;
+
+        @include md {
+          width: 7rem;
+          top: 88%;
+        }
+
+        @include sm {
+          width: 6rem;
+        }
+      }
     }
   }
 
