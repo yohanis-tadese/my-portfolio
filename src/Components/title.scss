@@ -1,0 +1,14 @@
+@import "../responsive.scss";
+
+.title-of-any {
+  @include md {
+    font-size: 27px;
+    margin-left: 4%;
+  }
+
+  @include sm {
+    font-size: 22px;
+    margin-left: 20px;
+    text-transform: uppercase;
+  }
+}
