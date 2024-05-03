@@ -1,0 +1,99 @@
+@import "../../responsive.scss";
+
+.service {
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  background-color: #ffffff;
+  padding-left: 8%;
+  padding-top: 57px;
+  padding-right: 50px;
+
+  @include md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include sm {
+    padding-top: 65px;
+  }
+
+  .service_title {
+    position: relative;
+
+    h2 {
+      font-size: 1.8em;
+      color: #222222;
+      font-weight: 700;
+      font-family: var(--font-base4);
+    }
+
+    @include md {
+      font-size: 1.4em;
+    }
+
+    @include sm {
+      font-size: 1.2em;
+    }
+  }
+
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 92%;
+    margin: 40px auto 20px auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
+      width: 98%;
+      margin: 30px auto 20px auto;
+    }
+
+    @include sm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-box {
+      display: flex;
+      gap: 15px;
+      padding: 30px;
+      background-color: white;
+
+      span {
+        font-size: 30px;
+        color: #64ffda;
+      }
+
+      &:hover {
+        background-color: #64ffda;
+        color: black;
+
+        span {
+          color: black;
+        }
+      }
+
+      .service-box-details {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        h3 {
+          line-height: 1.2;
+          font-weight: 500;
+          text-transform: uppercase;
+          font-size: 16px;
+          font-family: var(--font-base5);
+        }
+        p {
+          font-size: 14px;
+          color: rgba(51, 51, 51, 0.6);
+          line-height: 1.4;
+          font-family: var(--font-base5);
+        }
+      }
+    }
+  }
+}

@@ -11,24 +11,27 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      const scrollPosition = window.scrollY + 90;
+      const sectionOffsets = {};
 
-      // Determine which section is currently in view
+      // Calculate the offsetTop for each section
       const sections = ["home", "about", "skill", "portfolio", "contact"];
-      const scrollPosition = window.scrollY + 70;
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
-          const top = element.offsetTop;
-          const height = element.offsetHeight;
-          if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(section);
-            break;
-          }
+          sectionOffsets[section] = {
+            top: element.offsetTop,
+            height: element.offsetHeight,
+          };
+        }
+      }
+
+      // Determine which section is currently in view
+      for (const section of sections) {
+        const { top, height } = sectionOffsets[section];
+        if (scrollPosition >= top && scrollPosition < top + height) {
+          setActiveSection(section);
+          break;
         }
       }
     };
@@ -44,7 +47,9 @@ function Navbar() {
     <>
       <nav className={scrolling ? "nav-scroll" : ""}>
         <div className="leftside">
-          <img src={logo} alt="" />
+          <Link to="home" spy={true} smooth={true} offset={-10} duration={1000}>
+            <img src={logo} alt="my-personal logo" />
+          </Link>
         </div>
         <div className="rightside">
           <ul>
@@ -53,8 +58,8 @@ function Navbar() {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-10}
-                duration={1000}
+                offset={-70}
+                duration={1200}
                 className={activeSection === "home" ? "active" : ""}
               >
                 Home
@@ -65,8 +70,8 @@ function Navbar() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-10}
-                duration={1000}
+                offset={-70}
+                duration={1200}
                 className={activeSection === "about" ? "active" : ""}
               >
                 About
@@ -75,14 +80,14 @@ function Navbar() {
 
             <li>
               <Link
-                to="skill"
+                to="service"
                 spy={true}
                 smooth={true}
-                offset={-10}
-                duration={1000}
-                className={activeSection === "skill" ? "active" : ""}
+                offset={-70}
+                duration={1200}
+                className={activeSection === "service" ? "active" : ""}
               >
-                Skills
+                Service
               </Link>
             </li>
             <li>
@@ -90,8 +95,8 @@ function Navbar() {
                 to="portfolio"
                 spy={true}
                 smooth={true}
-                offset={-10}
-                duration={1000}
+                offset={-70}
+                duration={1200}
                 className={activeSection === "portfolio" ? "active" : ""}
               >
                 Portfolio
@@ -102,8 +107,8 @@ function Navbar() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-10}
-                duration={1000}
+                offset={-70}
+                duration={1200}
                 className={activeSection === "contact" ? "active" : ""}
               >
                 Contact
@@ -122,8 +127,8 @@ function Navbar() {
               to="home"
               spy={true}
               smooth={true}
-              offset={-10}
-              duration={1000}
+              offset={-70}
+              duration={1200}
               onClick={() => setOpen(false)}
             >
               Home
@@ -134,7 +139,7 @@ function Navbar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-10}
+              offset={-70}
               duration={1000}
               onClick={() => setOpen(false)}
             >
@@ -146,7 +151,7 @@ function Navbar() {
               to="skill"
               spy={true}
               smooth={true}
-              offset={-10}
+              offset={-70}
               duration={1000}
               onClick={() => setOpen(false)}
             >
@@ -158,7 +163,7 @@ function Navbar() {
               to="portfolio"
               spy={true}
               smooth={true}
-              offset={-10}
+              offset={-70}
               duration={1000}
               onClick={() => setOpen(false)}
             >
@@ -170,7 +175,7 @@ function Navbar() {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-10}
+              offset={-70}
               duration={1000}
               onClick={() => setOpen(false)}
             >

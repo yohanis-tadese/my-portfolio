@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./homepage.scss";
+import { Link } from "react-scroll";
 
 function Homepage() {
   useEffect(() => {
@@ -38,8 +39,8 @@ function Homepage() {
     <div id="home" className="homepage">
       <div className="left-side">
         <span>Hello, my name is</span>
-        <h2>Yohanis Tadese.</h2>
-        <h2>I build things for the web.</h2>
+        <h4>Yohanis Tadese.</h4>
+        <h4>I build things for the web.</h4>
         <h3>
           I'm a versatile full-stack (MERN) developer driven by a passion for
           crafting impactful digital solutions. My strength lies in creating
@@ -48,7 +49,18 @@ function Homepage() {
         </h3>
         <div className="buttons">
           <button className="btn button-one">Download CV</button>
-          <button className="btn button-two">My Work</button>
+
+          <button className="btn button-two">
+            <Link
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+            >
+              My Work
+            </Link>
+          </button>
         </div>
       </div>
     </div>

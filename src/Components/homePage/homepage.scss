@@ -4,20 +4,20 @@
   display: flex;
   width: 100%;
   z-index: 1800;
-  height: 100vh;
+  height: auto;
 
   .left-side {
     background-image: url("../../assets/core-image/hero-top.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex: 2.4;
-    padding-top: 70px;
-    padding-left: 70px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 8%;
     margin: 70px 5px 10px 10px;
 
     @include md {
@@ -27,11 +27,13 @@
 
     span {
       font-size: 18px;
-      font-weight: 700;
     }
 
-    h2 {
-      font-size: 56px;
+    h4 {
+      font-size: 2.8em;
+      color: #222222;
+      font-weight: 700;
+      font-family: var(--font-base4);
 
       @include md {
         font-size: 32px;
@@ -86,8 +88,15 @@
       }
       .button-one {
         margin-right: 20px;
-        background-color: #ffae19;
-        border-top-left-radius: 10px;
+        background-color: #64ffda;
+        border-top-right-radius: 5px;
+        color: #2f3450;
+        font-family: var(--font-base5);
+
+        &:hover {
+          background-color: #85f1d8;
+        }
+
         @include md {
           margin: 0;
         }
@@ -95,7 +104,12 @@
 
       .button-two {
         background-color: #2f3450;
-        border-top-right-radius: 10px;
+        border-top-right-radius: 5px;
+        font-family: var(--font-base5);
+
+        &:hover {
+          background-color: #3d415c;
+        }
       }
     }
   }

@@ -5,8 +5,8 @@
   height: auto;
   padding-bottom: 40px;
   background-color: #f5f8fd;
-  padding-left: 83px;
-  padding-top: 70px;
+  padding-left: 8%;
+  padding-top: 65px;
 
   @include md {
     padding-left: 23px;
@@ -16,15 +16,22 @@
     padding-left: 23px;
     padding-top: 60px;
   }
+  @include sm {
+    padding-left: 1px;
+  }
 
   .about-title {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
+    text-align: center;
 
     h2 {
-      font-size: 2em;
-      position: relative;
+      font-size: 1.8em;
+      color: #222222;
+      font-weight: 700;
+      font-family: var(--font-base4);
 
       @include md {
         font-size: 1.6em;
@@ -33,53 +40,41 @@
       @include sm {
         font-size: 1.4em;
       }
-
-      &::after {
-        content: "";
-        position: absolute;
-        width: 9rem;
-        top: 42px;
-        left: 0;
-        bottom: 5px;
-        height: 2.4px;
-        background-color: #febd01;
-
-        @include sm {
-          width: 7rem;
-          top: 30px;
-        }
-
-        @include md {
-          width: 8rem;
-          top: 39px;
-        }
-      }
     }
   }
 
   .about-content {
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     gap: 1.4em;
     margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px auto 2px auto;
 
     @include lg {
       display: flex;
       flex-direction: column;
+      padding: 10px 20px 10px 30px;
+    }
+    @include sm {
+      width: 90%;
+      margin: 5px auto;
     }
 
     .about-detail {
-      flex: 2;
+      flex: 2.5;
       display: flex;
       flex-direction: column;
       gap: 6px;
-      margin-top: 2em;
+      margin-top: 1em;
       text-align: justify;
-      padding-right: 20px;
+      padding-right: 50px;
 
       @include lg {
-        padding-right: 50px;
+        padding-right: 80px;
       }
 
       @include md {
@@ -88,11 +83,14 @@
 
       @include sm {
         margin-top: 0.7em;
+        padding-right: 26px;
       }
 
       h2 {
-        font-size: 1.7em;
-        position: relative;
+        font-size: 1.8em;
+        color: #222222;
+        font-weight: 700;
+        font-family: var(--font-base4);
 
         @include md {
           font-size: 1.4em;
@@ -106,6 +104,8 @@
       h3 {
         font-size: 1.3em;
         position: relative;
+        color: #222222;
+        font-weight: 550;
 
         @include md {
           font-size: 1.1em;
@@ -160,10 +160,9 @@
       margin-right: 10px;
 
       img {
-        border: 2px solid #febd01;
-        border-radius: 10%;
         margin-top: 20px;
         width: 20em;
+        background-color: #d8d3fb;
 
         @include lg {
           width: 18em;
@@ -171,12 +170,11 @@
 
         @include md {
           width: 20em;
-          margin-top: -30px;
+          margin-left: -10px;
         }
 
         @include sm {
           width: 16em;
-          margin-top: -30px;
         }
       }
     }

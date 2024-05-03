@@ -4,12 +4,10 @@
   position: fixed;
   width: 4%;
   height: 100vh;
-  background-color: #edf2f8;
   z-index: 2000;
   top: 0;
   bottom: 0;
   left: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   @include lg {
     width: 5%;
@@ -29,17 +27,18 @@
 
     li {
       font-size: 14px;
-      width: 34px;
-      height: 34px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       background-color: #ffffff;
+      border: 3px solid #f5f8fd;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-bottom: 10px;
 
       &:hover {
-        background-color: #ffc14d;
+        background-color: #64ffda;
       }
 
       a {
