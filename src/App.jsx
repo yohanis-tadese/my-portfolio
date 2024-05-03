@@ -1,7 +1,7 @@
 import "./App.scss";
 import About from "./Components/about/About";
 import Homepage from "./Components/homePage/Homepage";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/NavBar/Navbar";
 import Portfolio from "./Components/portfolio/Portfolio";
 import Services from "./Components/service/Service";
 import SideBar from "./Components/sideBar/SideBar";
