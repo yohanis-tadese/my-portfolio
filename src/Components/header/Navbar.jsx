@@ -190,7 +190,7 @@ function Navbar() {
               duration={1000}
               onClick={() => setOpen(false)}
             >
-              project
+              resume
             </Link>
           </li>
           <li>
