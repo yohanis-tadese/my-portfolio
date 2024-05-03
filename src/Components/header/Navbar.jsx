@@ -11,14 +11,15 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 90;
+      const scrollPosition = window.scrollY;
       const sectionOffsets = {};
+      let active = false; // Flag to check if any section is active
 
       // Calculate the offsetTop for each section
       const sections = [
         "home",
         "about",
-        "skill",
+        "service",
         "resume",
         "project",
         "contact",
@@ -30,16 +31,17 @@ function Navbar() {
             top: element.offsetTop,
             height: element.offsetHeight,
           };
+
+          const { top, height } = sectionOffsets[section];
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            setActiveSection(section);
+            break;
+          }
         }
       }
 
-      // Determine which section is currently in view
-      for (const section of sections) {
-        const { top, height } = sectionOffsets[section];
-        if (scrollPosition >= top && scrollPosition < top + height) {
-          setActiveSection(section);
-          break;
-        }
+      if (!active) {
+        setActiveSection("");
       }
     };
 
@@ -65,7 +67,7 @@ function Navbar() {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={1200}
                 className={activeSection === "home" ? "active" : ""}
               >
@@ -77,7 +79,7 @@ function Navbar() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={1200}
                 className={activeSection === "about" ? "active" : ""}
               >
@@ -90,7 +92,7 @@ function Navbar() {
                 to="service"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={1200}
                 className={activeSection === "service" ? "active" : ""}
               >
@@ -102,7 +104,7 @@ function Navbar() {
                 to="resume"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={1200}
                 className={activeSection === "resume" ? "active" : ""}
               >
@@ -114,7 +116,7 @@ function Navbar() {
                 to="project"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={1200}
                 className={activeSection === "project" ? "active" : ""}
               >
@@ -126,7 +128,7 @@ function Navbar() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-60}
                 duration={1200}
                 className={activeSection === "contact" ? "active" : ""}
               >
@@ -150,7 +152,7 @@ function Navbar() {
               to="home"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-60}
               duration={1200}
               onClick={() => setOpen(false)}
             >
@@ -162,7 +164,7 @@ function Navbar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-60}
               duration={1000}
               onClick={() => setOpen(false)}
             >
@@ -171,14 +173,14 @@ function Navbar() {
           </li>
           <li>
             <Link
-              to="skill"
+              to="service"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-60}
               duration={1000}
               onClick={() => setOpen(false)}
             >
-              Skill
+              Service
             </Link>
           </li>
           <li>
@@ -186,11 +188,11 @@ function Navbar() {
               to="resume"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-60}
               duration={1000}
               onClick={() => setOpen(false)}
             >
-              resume
+              Resume
             </Link>
           </li>
           <li>
@@ -198,11 +200,11 @@ function Navbar() {
               to="project"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-60}
               duration={1000}
               onClick={() => setOpen(false)}
             >
-              project
+              Project
             </Link>
           </li>
           <li>
@@ -210,7 +212,7 @@ function Navbar() {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-60}
               duration={1000}
               onClick={() => setOpen(false)}
             >

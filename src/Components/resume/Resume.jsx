@@ -1,120 +1,122 @@
 import { useState } from "react";
-import Amazon from "./works/Amazon";
-import Apple from "./works/Apple";
-import Google from "./works/Google";
-import ReactBD from "./works/ReactBD";
-import Splash from "./works/Splash";
+import Skill from "./resumeComponent/Skill";
+import Project from "./resumeComponent/Project";
+import Experience from "./resumeComponent/Experience";
+import Education from "./resumeComponent/Education";
+import Interest from "./resumeComponent/Interest";
 import SectionTitle from "../SectionTitle";
 import "./resume.scss";
 
-const Experience = () => {
-  const [workReactbd, setWorkReactbd] = useState(true);
-  const [workGoogle, setWorkGoogle] = useState(false);
-  const [workApple, setWorkApple] = useState(false);
-  const [workSplash, setWorkSplash] = useState(false);
-  const [workAmazon, setWorkAmazon] = useState(false);
+const Resume = () => {
+  const [whereEducation, setwhereEducation] = useState(true);
+  const [workExperience, setWorkExperience] = useState(false);
+  const [workProject, setWorkProject] = useState(false);
+  const [workInterest, setWorkInterest] = useState(false);
+  const [workSkill, setWorkSkill] = useState(false);
 
-  const handleReactbd = () => {
-    setWorkReactbd(true);
-    setWorkGoogle(false);
-    setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(false);
-  };
-
-  const handleGoogle = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(true);
-    setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(false);
+  const handleEducation = () => {
+    setwhereEducation(true);
+    setWorkExperience(false);
+    setWorkProject(false);
+    setWorkInterest(false);
+    setWorkSkill(false);
   };
 
-  const handleApple = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(false);
-    setWorkApple(true);
-    setWorkSplash(false);
-    setWorkAmazon(false);
+  const handleExperience = () => {
+    setwhereEducation(false);
+    setWorkExperience(true);
+    setWorkProject(false);
+    setWorkInterest(false);
+    setWorkSkill(false);
   };
-  const handleSplash = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(false);
-    setWorkApple(false);
-    setWorkSplash(true);
-    setWorkAmazon(false);
+
+  const handleProject = () => {
+    setwhereEducation(false);
+    setWorkExperience(false);
+    setWorkProject(true);
+    setWorkInterest(false);
+    setWorkSkill(false);
   };
-  const handleAmazon = () => {
-    setWorkReactbd(false);
-    setWorkGoogle(false);
-    setWorkApple(false);
-    setWorkSplash(false);
-    setWorkAmazon(true);
+  const handleInterest = () => {
+    setwhereEducation(false);
+    setWorkExperience(false);
+    setWorkProject(false);
+    setWorkInterest(true);
+    setWorkSkill(false);
+  };
+  const handleSkill = () => {
+    setwhereEducation(false);
+    setWorkExperience(false);
+    setWorkProject(false);
+    setWorkInterest(false);
+    setWorkSkill(true);
   };
   return (
     <section id="resume" className="Myresume ">
-      <SectionTitle title="Where I have Worked" titleNo="02" />
+      <SectionTitle title="My formal Bio Details" titleNo="02" />
       <div className="resume-container w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">
           <li
-            onClick={handleReactbd}
+            onClick={handleEducation}
             className={`${
-              workReactbd
-                ? "border-l-textGreen text-textGreen"
+              whereEducation
+                ? "border-l-textroyalBlue text-textroyalBlue"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#64FFDA] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#DEFFFE] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            RactBD
+            Education
           </li>
           <li
-            onClick={handleGoogle}
+            onClick={handleExperience}
             className={`${
-              workGoogle
-                ? "border-l-textGreen text-textGreen"
+              workExperience
+                ? "border-l-textroyalBlue text-textroyalBlue"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#64FFDA] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#DEFFFE] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Google
+            Experience
           </li>
           <li
-            onClick={handleApple}
+            onClick={handleProject}
             className={`${
-              workApple
-                ? "border-l-textGreen text-text-Green"
+              workProject
+                ? "border-l-textroyalBlue text-textroyalBlue"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#64FFDA] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#DEFFFE] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Apple
+            Project
           </li>
+
           <li
-            onClick={handleSplash}
+            onClick={handleSkill}
             className={`${
-              workSplash
-                ? "border-l-textGreen text-textGreen"
+              workSkill
+                ? "border-l-textroyalBlue text-textroyalBlue"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#64FFDA] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#DEFFFE] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Splash
+            Skill
           </li>
+
           <li
-            onClick={handleAmazon}
+            onClick={handleInterest}
             className={`${
-              workAmazon
-                ? "border-l-textGreen text-textGreen"
+              workInterest
+                ? "border-l-textroyalBlue text-textroyalBlue"
                 : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#64FFDA] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            } border-l-2 bg-transparent hover:bg-[#DEFFFE] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Amazon
+            Interest
           </li>
         </ul>
-        {workReactbd && <ReactBD />}
-        {workGoogle && <Google />}
-        {workApple && <Apple />}
-        {workSplash && <Splash />}
-        {workAmazon && <Amazon />}
+        {whereEducation && <Education />}
+        {workExperience && <Experience />}
+        {workProject && <Project />}
+        {workInterest && <Interest />}
+        {workSkill && <Skill />}
       </div>
     </section>
   );
 };
 
-export default Experience;
+export default Resume;

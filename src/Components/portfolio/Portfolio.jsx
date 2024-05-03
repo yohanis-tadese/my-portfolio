@@ -33,12 +33,12 @@ const Portfolio = () => {
                 src={amazonImg}
                 alt="amazonImg"
               />
-              <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+              <div className="absolute w-full h-full bg-textBlack/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
           </a>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
             <div>
-              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+              <p className="font-titleFont text-textBlack text-sm tracking-wide">
                 Featured Project
               </p>
               <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
@@ -46,8 +46,8 @@ const Portfolio = () => {
             <p className="bg-[#64FFDA] text-sm md:text-base p-2 md:p-6 rounded-md  ">
               An Amazon clone website for visualizing personalized Amazon
               website. View your products, Add your account with{" "}
-              <span className="text-textGreen">O-auth</span> and then make the
-              purchage using <span className="text-textGreen">stripe</span>.
+              <span className="text-textBlack">O-auth</span> and then make the
+              purchage using <span className="text-textBlack">stripe</span>.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
               <li>Nextjs</li>
@@ -58,14 +58,14 @@ const Portfolio = () => {
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textBlack duration-300"
                 href="https://github.com/Jhontadese"
                 target="_blank"
               >
                 <TbBrandGithub />
               </a>
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textBlack duration-300"
                 href="https://github.com/Jhontadese"
                 target="_blank"
               >
@@ -88,12 +88,12 @@ const Portfolio = () => {
                 src={Travel}
                 alt="cyberImg"
               />
-              <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+              <div className="absolute w-full h-full bg-textBlack/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
           </a>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end text-right z-10">
             <div>
-              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+              <p className="font-titleFont text-textBlack text-sm tracking-wide">
                 Featured Project
               </p>
               <h3 className="text-2xl font-bold">Traveler pack easily</h3>
@@ -112,7 +112,7 @@ const Portfolio = () => {
             </ul>
             <div className="text-2xl flex gap-4">
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textBlack duration-300"
                 href="https://github.com/Jhontadese/react-travel-list"
                 target="_blank"
               >
@@ -120,7 +120,7 @@ const Portfolio = () => {
               </a>
 
               <a
-                className="hover:text-textGreen duration-300"
+                className="hover:text-textBlack duration-300"
                 href="https://packed-travel-ready.netlify.app/"
                 target="_blank"
               >
@@ -152,12 +152,12 @@ const Portfolio = () => {
                     src={noorShop}
                     alt="noorShop"
                   />
-                  <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+                  <div className="absolute w-full h-full bg-textBlack/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
                 </div>
               </a>
               <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end text-right xl:-ml-16 z-10">
                 <div>
-                  <p className="font-titleFont text-textGreen text-sm tracking-wide">
+                  <p className="font-titleFont text-textBlack text-sm tracking-wide">
                     Featured Project
                   </p>
                   <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
@@ -165,9 +165,9 @@ const Portfolio = () => {
                 <p className="text-sm md:text-base bg-[#64FFDA] p-2 md:p-6 rounded-md  ">
                   An Amazon clone website for visualizing personalized Amazon
                   website. View your products, Add your account with{" "}
-                  <span className="text-textGreen">O-auth</span> and then make
+                  <span className="text-textBlack">O-auth</span> and then make
                   the purchage using{" "}
-                  <span className="text-textGreen">stripe</span>.
+                  <span className="text-textBlack">stripe</span>.
                 </p>
                 <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
                   <li>Nextjs</li>
@@ -214,7 +214,7 @@ const Portfolio = () => {
               </a>
               <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end text-right z-10">
                 <div>
-                  <p className="font-titleFont text-textGreen text-sm tracking-wide">
+                  <p className="font-titleFont text-textBlack text-sm tracking-wide">
                     Featured Project
                   </p>
                   <h3 className="text-2xl font-bold">Traveler pack easily</h3>
@@ -233,7 +233,7 @@ const Portfolio = () => {
                 </ul>
                 <div className="text-2xl flex gap-4">
                   <a
-                    className="hover:text-textGreen duration-300"
+                    className="hover:text-textBlack duration-300"
                     href="https://github.com/Jhontadese/react-travel-list"
                     target="_blank"
                   >
@@ -241,7 +241,7 @@ const Portfolio = () => {
                   </a>
 
                   <a
-                    className="hover:text-textGreen duration-300"
+                    className="hover:text-textBlack duration-300"
                     href="https://packed-travel-ready.netlify.app/"
                     target="_blank"
                   >
@@ -263,12 +263,12 @@ const Portfolio = () => {
                     src={amazonImg}
                     alt="amazonImg"
                   />
-                  <div className="absolute w-full h-full bg-textGreen/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
+                  <div className="absolute w-full h-full bg-textBlack/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
                 </div>
               </a>
               <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
                 <div>
-                  <p className="font-titleFont text-textGreen text-sm tracking-wide">
+                  <p className="font-titleFont text-textBlack text-sm tracking-wide">
                     Featured Project
                   </p>
                   <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
@@ -276,9 +276,9 @@ const Portfolio = () => {
                 <p className="bg-[#64FFDA] text-sm md:text-base p-2 md:p-6 rounded-md  ">
                   An Amazon clone website for visualizing personalized Amazon
                   website. View your products, Add your account with{" "}
-                  <span className="text-textGreen">O-auth</span> and then make
+                  <span className="text-textBlack">O-auth</span> and then make
                   the purchage using{" "}
-                  <span className="text-textGreen">stripe</span>.
+                  <span className="text-textBlack">stripe</span>.
                 </p>
                 <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
                   <li>Nextjs</li>
@@ -289,14 +289,14 @@ const Portfolio = () => {
                 </ul>
                 <div className="text-2xl flex gap-4">
                   <a
-                    className="hover:text-textGreen duration-300"
+                    className="hover:text-textBlack duration-300"
                     href="https://github.com/Jhontadese"
                     target="_blank"
                   >
                     <TbBrandGithub />
                   </a>
                   <a
-                    className="hover:text-textGreen duration-300"
+                    className="hover:text-textBlack duration-300"
                     href="https://github.com/Jhontadese"
                     target="_blank"
                   >
@@ -314,7 +314,7 @@ const Portfolio = () => {
           <button
             style={{ background: "#64FFDA" }}
             onClick={() => setShowMore(false)}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+            className="w-36 h-12 rounded-md text-textBlack text-[13px] border border-textBlack hover:bg-hoverColor duration-300"
           >
             Show Less
           </button>
@@ -322,7 +322,7 @@ const Portfolio = () => {
           <button
             onClick={() => setShowMore(true)}
             style={{ background: "#64FFDA" }}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300 "
+            className="w-36 h-12 rounded-md text-textBlack text-[13px] border border-textBlack hover:bg-hoverColor duration-300 "
           >
             Show More
           </button>

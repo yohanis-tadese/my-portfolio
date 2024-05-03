@@ -41,7 +41,7 @@
         left: 45%;
         bottom: 5px;
         height: 2.4px;
-        background-color: #64ffda;
+        background-color: #ffc14d;
 
         @include md {
           width: 7rem;
@@ -82,15 +82,15 @@
 
       span {
         font-size: 30px;
-        color: #64ffda;
+        color: #ffc14d;
       }
 
       &:hover {
-        background-color: #64ffda;
+        background-color: #ffc14d;
         color: black;
 
         span {
-          color: black;
+          color: #2e51ed;
         }
       }
 

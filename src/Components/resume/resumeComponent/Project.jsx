@@ -1,7 +1,6 @@
-import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
-
-const ReactBD = () => {
+import { motion } from "framer-motion";
+const Project = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -9,39 +8,37 @@ const ReactBD = () => {
       transition={{ delay: 0.1 }}
       className="w-full"
     >
-      <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Engineer
-        <span className="text-textGreen tracking-wide">@ReactBD</span>
-      </h3>
-      <p className="text-sm mt-1 font-medium text-textDark">
-        Jan 2023 - present
+      <h3 className="flex gap-1 font-medium text-xl font-titleFont">Udemy</h3>
+      <p className="text-sm mt-1 font-medium text-textroyalBlue">
+        Jan 2022 - Dec 2023
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Write modern, performant, maintainable code for a diverse array of
-          client and internal projects
+          Forkify: Mastered JavaScript and ES6 by crafting a recipe search app
+          with Fetch API, featuring search functionality and recipe bookmarking.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Work with a variety of different languages, platforms, frameworks, and
-          content management systems such as JavaScript, TypeScript, Gatsby,
-          React, Craft, WordPress, Prismic, and Netlify
+          Natours: Mastered modern CSS techniques, including animations and
+          responsive design, while building a dynamic tour booking website with
+          Node.js, MongoDB, and React.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Communicate with multi-disciplinary teams of engineers, designers,
-          producers, and clients on a daily basis
+          ABE Garage Project: Utilizing MERN stack (MongoDB, Express.js,
+          React.js, Node.js) for a robust and dynamic automotive workshop
+          management system.
         </li>
       </ul>
     </motion.div>
   );
 };
 
-export default ReactBD;
+export default Project;

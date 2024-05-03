@@ -18,7 +18,7 @@
     padding-top: 100px;
     padding-bottom: 40px;
     padding-left: 8%;
-    margin: 70px 5px 10px 10px;
+    margin: 65px 5px 10px 10px;
 
     @include md {
       padding-left: 15px;
@@ -88,13 +88,12 @@
       }
       .button-one {
         margin-right: 20px;
-        background-color: #64ffda;
+        background-color: #ffc14d;
         border-top-right-radius: 5px;
-        color: #2f3450;
         font-family: var(--font-base5);
 
         &:hover {
-          background-color: #85f1d8;
+          background-color: #ffce72;
         }
 
         @include md {

@@ -17,7 +17,8 @@
     "react-router-dom": "^6.23.0",
     "react-scroll": "^1.9.0",
     "sass": "^1.75.0",
-    "styled-components": "^6.1.9"
+    "styled-components": "^6.1.9",
+    "tailwind-scrollbar": "^3.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
