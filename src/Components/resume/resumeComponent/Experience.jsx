@@ -10,7 +10,7 @@ const Experience = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Haramaya University | CCI College
+        From Haramaya University | CCI College
       </h3>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
@@ -29,7 +29,7 @@ const Experience = () => {
       </ul>
       <br />
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        Udemy | Instructor Jonas Schmedtmann
+        From Udemy By Instructor Jonas Schmedtmann
       </h3>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">

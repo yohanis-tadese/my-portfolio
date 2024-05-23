@@ -14,13 +14,14 @@
     background-position: center;
     display: flex;
     flex-direction: column;
+    background-color: #f5f8fd;
+    border-bottom: 3px solid #f5f8fd;
     gap: 10px;
     flex: 2.4;
     padding-top: 100px;
     padding-bottom: 40px;
     padding-left: 8%;
     margin-top: 65px;
-    border-bottom: 3px solid #f5f8fd;
 
     @include md {
       padding-left: 15px;

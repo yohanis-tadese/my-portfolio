@@ -3,8 +3,8 @@ import emailjs from "@emailjs/browser";
 import { toast, Slide } from "react-toastify";
 import "./contactMe.scss";
 
-// import emailBg from "../../assets/core-image/about-me.png";
 import SectionTitle from "../SectionTitle";
+import { FaEnvelope, FaPhone, FaTelegram } from "react-icons/fa";
 
 const ContactMe = () => {
   const nameRef = useRef();
@@ -19,6 +19,7 @@ const ContactMe = () => {
     email: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false); // Add loading state
 
   if (values.name.length !== 0) {
     nameRef.current.classList.remove("error");
@@ -51,6 +52,13 @@ const ContactMe = () => {
       });
       console.log("Please fill all the required fields?");
     } else {
+      setIsLoading(true); // Set loading state to true
+      toast.info("Sending email...", {
+        // Display loading toast
+        theme: "colored",
+        transition: Slide,
+        autoClose: false, // Don't auto close loading toast
+      });
       emailjs
         .sendForm(
           "service_fgrh799",
@@ -82,15 +90,16 @@ const ContactMe = () => {
           (error) => {
             console.log("FAILED...", error);
           }
-        );
+        )
+        .finally(() => {
+          setIsLoading(false); // Set loading state to false after submission
+          toast.dismiss(); // Dismiss the loading toast
+        });
     }
   };
 
   useEffect(() => {
-    if (
-      banner ===
-      "Thank you! Your email has been received, and I will reply shortly."
-    ) {
+    if (banner === "Thank you! Your email has been received.") {
       setTimeout(() => {
         setBanner("");
         messageShadowRef.current.classList.remove("messageShadow");
@@ -107,17 +116,60 @@ const ContactMe = () => {
 
   return (
     <div id="contact" className="contact-form">
-      <SectionTitle title="Contact me" />
+      <SectionTitle title="Get In Touch Me" />
       <div className="contact-container">
         <div className="main">
+          <div className="form-img">
+            <div className="form-img">
+              <a
+                href="mailto:yohanistadese06@gmail.com"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <s>
+                    <FaEnvelope />
+                  </s>
+                  <i>Yohanistadese06@gmail.com</i>
+                </span>
+              </a>
+              <a
+                href="tel:+251984751233"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <s>
+                    <FaPhone />
+                  </s>
+                  <i>Phone: +251 984751233</i>
+                </span>
+              </a>
+              <a
+                href="https://t.me/yohanistadese"
+                target="blank"
+                rel="noopener noreferrer"
+              >
+                <span>
+                  <s>
+                    <FaTelegram />
+                  </s>
+                  <i>Telegram: @yohanistadese</i>
+                </span>
+              </a>
+            </div>
+          </div>
           <div className="content">
-            <h2>Contact Us</h2>
             <form method="POST" id="yourFormId" onSubmit={handleSubmit}>
-              <div ref={messageShadowRef} id="message" className="message">
+              <span ref={messageShadowRef} id="message" className="message">
                 <p ref={bannerColorRef} id="id">
                   {banner}
                 </p>
-              </div>
+              </span>
+
+              <h2>Send Me a Message 👇</h2>
+
+              <br />
 
               <input
                 type="text"
@@ -143,21 +195,18 @@ const ContactMe = () => {
                 name="message"
                 placeholder="Your message"
                 style={{
-                  paddingLeft: "6%",
-                  paddingTop: "2%",
+                  paddingLeft: "4.3%",
+                  paddingTop: "5%",
                   width: "100%",
                   height: "70px",
                 }}
               ></textarea>
-              <button type="submit" className="btn">
-                Send <i className="fas fa-paper-plane"></i>
+              <button type="submit" className="btn" disabled={isLoading}>
+                {isLoading ? "Sending..." : "Send"}{" "}
+                <i className="fas fa-paper-plane"></i>
               </button>
             </form>
           </div>
-          {/* <div className="form-img">
-            <span>Emainl: </span>
-            <span>Phone</span>
-          </div> */}
         </div>
       </div>
     </div>

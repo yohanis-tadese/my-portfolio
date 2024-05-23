@@ -68,8 +68,8 @@ function Navbar() {
                 to="home"
                 spy={true}
                 smooth={true}
-                offset={-60}
-                duration={1200}
+                offset={-30}
+                duration={500}
                 className={activeSection === "home" ? "active" : ""}
               >
                 Home
@@ -80,8 +80,8 @@ function Navbar() {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-60}
-                duration={1200}
+                offset={-30}
+                duration={500}
                 className={activeSection === "about" ? "active" : ""}
               >
                 About
@@ -93,8 +93,8 @@ function Navbar() {
                 to="service"
                 spy={true}
                 smooth={true}
-                offset={-60}
-                duration={1200}
+                offset={-30}
+                duration={500}
                 className={activeSection === "service" ? "active" : ""}
               >
                 Service
@@ -105,8 +105,8 @@ function Navbar() {
                 to="resume"
                 spy={true}
                 smooth={true}
-                offset={-60}
-                duration={1200}
+                offset={-30}
+                duration={500}
                 className={activeSection === "resume" ? "active" : ""}
               >
                 Resume
@@ -117,8 +117,8 @@ function Navbar() {
                 to="project"
                 spy={true}
                 smooth={true}
-                offset={-60}
-                duration={1200}
+                offset={-30}
+                duration={500}
                 className={activeSection === "project" ? "active" : ""}
               >
                 project
@@ -129,8 +129,8 @@ function Navbar() {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-60}
-                duration={1200}
+                offset={-30}
+                duration={500}
                 className={activeSection === "contact" ? "active" : ""}
               >
                 Contact

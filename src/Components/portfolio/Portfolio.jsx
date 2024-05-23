@@ -21,7 +21,10 @@ const Portfolio = () => {
 
       <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
         {/* *************** Project one ******************** */}
-        <div className="flex flex-col xl:flex-row gap-6">
+        <div
+          className="flex flex-col xl:flex-row gap-6"
+          style={{ border: "1px solid rgba(0, 0, 0, 0.1)", padding: "20px" }}
+        >
           <a
             className="w-full xl:w-1/2 h-auto relative group"
             href="https://jhon21.netlify.app/"
@@ -38,7 +41,7 @@ const Portfolio = () => {
           </a>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
             <div>
-              <p className="font-titleFont text-textBlack text-sm tracking-wide">
+              <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold ">
                 Featured Project
               </p>
               <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
@@ -79,7 +82,10 @@ const Portfolio = () => {
         </div>
 
         {/* *************** Project two ******************** */}
-        <div className="flex flex-col xl:flex-row-reverse gap-6">
+        <div
+          className="flex flex-col xl:flex-row-reverse gap-6"
+          style={{ border: "1px solid rgba(0, 0, 0, 0.1)", padding: "20px" }}
+        >
           <a
             className="w-full xl:w-1/2 h-auto relative group"
             href="https://packed-travel-ready.netlify.app/"
@@ -96,7 +102,7 @@ const Portfolio = () => {
           </a>
           <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end text-right z-10">
             <div>
-              <p className="font-titleFont text-textBlack text-sm tracking-wide">
+              <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold">
                 Featured Project
               </p>
               <h3 className="text-2xl font-bold">Traveler pack easily</h3>
@@ -146,7 +152,13 @@ const Portfolio = () => {
             transition={{ delay: 0.1 }}
           >
             {/* *************** Project three ******************** */}
-            <div className="flex flex-col xl:flex-row gap-6 mt-20">
+            <div
+              className="flex flex-col xl:flex-row gap-6 mt-20"
+              style={{
+                border: "1px solid rgba(0, 0, 0, 0.1)",
+                padding: "20px",
+              }}
+            >
               <a
                 className="w-full xl:w-1/2 h-auto relative group"
                 href="https://github.com/Jhontadese"
@@ -163,7 +175,7 @@ const Portfolio = () => {
               </a>
               <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end text-right xl:-ml-16 z-10">
                 <div>
-                  <p className="font-titleFont text-textBlack text-sm tracking-wide">
+                  <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold">
                     Featured Project
                   </p>
                   <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
@@ -206,7 +218,13 @@ const Portfolio = () => {
             </div>
 
             {/* *************** Project four ******************** */}
-            <div className="flex flex-col xl:flex-row-reverse gap-6 mt-20">
+            <div
+              className="flex flex-col xl:flex-row-reverse gap-6 mt-20"
+              style={{
+                border: "1px solid rgba(0, 0, 0, 0.1)",
+                padding: "20px",
+              }}
+            >
               <a
                 className="w-full xl:w-1/2 h-auto relative group"
                 href="https://packed-travel-ready.netlify.app/"
@@ -223,7 +241,7 @@ const Portfolio = () => {
               </a>
               <div className="w-full xl:w-1/2 flex flex-col gap-6 justify-between items-end text-right z-10">
                 <div>
-                  <p className="font-titleFont text-textBlack text-sm tracking-wide">
+                  <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold">
                     Featured Project
                   </p>
                   <h3 className="text-2xl font-bold">Traveler pack easily</h3>
@@ -263,7 +281,13 @@ const Portfolio = () => {
               </div>
             </div>
 
-            <div className="flex flex-col xl:flex-row gap-6 mt-20">
+            <div
+              className="flex flex-col xl:flex-row gap-6 mt-20"
+              style={{
+                border: "1px solid rgba(0, 0, 0, 0.1)",
+                padding: "20px",
+              }}
+            >
               <a
                 className="w-full xl:w-1/2 h-auto relative group"
                 href="https://jhon21.netlify.app/"
@@ -280,7 +304,7 @@ const Portfolio = () => {
               </a>
               <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
                 <div>
-                  <p className="font-titleFont text-textBlack text-sm tracking-wide">
+                  <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold">
                     Featured Project
                   </p>
                   <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>

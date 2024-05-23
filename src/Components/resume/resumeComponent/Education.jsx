@@ -36,8 +36,14 @@ const Education = () => {
           <span className="text-textGreen mt-1 text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          Full-Stack Web Application Development (MERN) By Instructors jonas
-          schmedtmann.
+          Full-Stack Web Application Development (MERN) Stack By Instructors
+          <a
+            target="blank"
+            href="https://www.udemy.com/user/jonasschmedtmann/"
+            className="text-textroyalBlue"
+          >
+            👉 Jonas schmedtmann
+          </a>
         </li>
       </ul>
     </motion.div>

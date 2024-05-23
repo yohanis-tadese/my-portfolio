@@ -1,6 +1,7 @@
 import "./about.scss";
-import my_image from "../../assets/core-image/hero_img.png";
+import my_image from "../../assets/core-image/profile.jpg";
 import SectionTitle from "../SectionTitle";
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function About() {
   return (
@@ -19,13 +20,14 @@ function About() {
         </div>
 
         <div className="about-detail">
-          <h2>I'M Yohanis Tadese </h2>
           <h3>Full Stack (MERN) Based Developer </h3>
           <span>
-            My expertise lies in crafting robust and dynamic web applications
-            tailored to meet diverse client needs. With a keen eye for detail
-            and a passion for innovation, I excel in leveraging the latest tools
-            and techniques to deliver high-quality solutions.
+            Hello! I'm Yohanis Tadese and I'm passionate about bringing ideas to
+            life on the internet. my expertise lies in crafting robust and
+            dynamic web applications tailored to meet diverse client needs. With
+            a keen eye for detail and a passion for innovation, I excel in
+            leveraging the latest tools and techniques to deliver high-quality
+            solutions.
           </span>
           <span>
             My commitment to excellence drives me to continuously enhance my
@@ -34,14 +36,36 @@ function About() {
             technical prowess to drive projects to success.
           </span>
           <ul>
+            <h4>Here are a Few Highlights:</h4>
             <li>
-              <i>Email</i>: yohanistadese06@gmail.com
+              <span>
+                <FaArrowAltCircleRight />
+              </span>
+              <i>Full Stack web application developer.</i>
             </li>
             <li>
-              <i>Phone number:</i> +251 984751233
+              <span>
+                <FaArrowAltCircleRight />
+              </span>
+              <i>Interactive Front End as per the design React developer.</i>
             </li>
             <li>
-              <i>Telegram username</i> : @yohanistadese
+              <span>
+                <FaArrowAltCircleRight />
+              </span>
+              <i>Back end developer with Node.js and Express.js.</i>
+            </li>
+            <li>
+              <span>
+                <FaArrowAltCircleRight />
+              </span>
+              <i>Skilled in building RESTful APIs.</i>
+            </li>
+            <li>
+              <span>
+                <FaArrowAltCircleRight />
+              </span>
+              <i>Managing database (MySQL, MongoDB).</i>
             </li>
           </ul>
         </div>
