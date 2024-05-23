@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   padding-bottom: 40px;
-  background-color: #ffffff;
+  background-color: #f5f8fd;
   padding-left: 8%;
   padding-top: 57px;
   padding-right: 50px;
@@ -41,7 +41,7 @@
         left: 45%;
         bottom: 5px;
         height: 2.4px;
-        background-color: #ffc14d;
+        background-color: #2196c0;
 
         @include md {
           width: 7rem;
@@ -79,19 +79,15 @@
       gap: 15px;
       padding: 30px;
       background-color: white;
+      border: 1px solid #2196c0;
 
       span {
         font-size: 30px;
-        color: #ffc14d;
+        color: #2196c0;
       }
 
       &:hover {
-        background-color: #ffc14d;
-        color: black;
-
-        span {
-          color: #2e51ed;
-        }
+        background-color: #f5f8fd;
       }
 
       .service-box-details {

@@ -154,7 +154,10 @@ const ContactMe = () => {
               </button>
             </form>
           </div>
-          <div className="form-img"></div>
+          {/* <div className="form-img">
+            <span>Emainl: </span>
+            <span>Phone</span>
+          </div> */}
         </div>
       </div>
     </div>

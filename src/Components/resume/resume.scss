@@ -1,12 +1,28 @@
+@import "../../responsive.scss";
+
 .Myresume {
   width: 100%;
   height: auto;
   padding-bottom: 40px;
-  background-color: #f5f8fd;
+  background-color: #ffffff;
   padding-left: 8%;
   padding-top: 67px;
   padding-right: 50px;
   padding-bottom: 40px;
+
+  @include md {
+    padding-left: 3%;
+    padding-top: 37px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+
+  @include sm {
+    padding-left: 2%;
+    padding-top: 27px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
 }
 
 .resume-container {

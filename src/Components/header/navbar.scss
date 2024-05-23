@@ -54,11 +54,11 @@ nav {
         }
 
         :hover {
-          color: #ffc14d;
+          color: #0794c9;
         }
 
         .active {
-          color: #ffc14d;
+          color: #0794c9;
         }
 
         &:hover,
@@ -100,13 +100,12 @@ nav {
 
 .menu-lists {
   ul {
-    list-style-type: none;
-    display: flex;
     display: none;
+    list-style-type: none;
     flex-direction: column;
-    margin-top: 66px;
+    margin-top: 64px;
     background-color: #ffffff;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease-in;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -121,7 +120,7 @@ nav {
       margin-bottom: 10px;
       border-top: 1px solid rgb(225, 222, 222);
       padding-left: 20px;
-      padding-top: 10px;
+      padding-top: 15px;
 
       text-decoration: none;
       color: #333;
@@ -132,9 +131,13 @@ nav {
       transition: color 0.3s ease;
       transition: all 0.3s ease-in-out;
 
+      &:last-child {
+        border-bottom: 1px solid rgb(225, 222, 222);
+      }
+
       &:hover,
       &:active {
-        color: #febd01;
+        color: #0794c9;
       }
     }
   }

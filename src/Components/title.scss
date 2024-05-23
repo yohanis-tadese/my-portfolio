@@ -1,14 +1,19 @@
 @import "../responsive.scss";
 
 .title-of-any {
-  @include md {
-    font-size: 27px;
-    margin-left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #0794c9;
+  padding-bottom: 10px;
+  span {
+    background-color: #0794c9;
   }
 
   @include sm {
-    font-size: 22px;
-    margin-left: 20px;
+    font-size: 17px;
+    margin-left: 50px;
     text-transform: uppercase;
   }
 }

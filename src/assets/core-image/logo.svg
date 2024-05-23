@@ -9,7 +9,7 @@
     <g transform="translate(11.000000, 5.000000)">
       <polygon
         id="Shape"
-        stroke="#f8a100"
+        stroke="#0794C9"
         stroke-width="4"
         fill="#112240"
         points="39 0 0 22 0 67 39 90 78 68 78 23"
@@ -21,7 +21,7 @@
       font-size="30px"
       font-weight="750"
       font-family="Poppins"
-      fill="#f8a100"
+      fill="#0794C9"
       text-anchor="middle"
     >
       JO

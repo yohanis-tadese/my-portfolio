@@ -12,7 +12,10 @@ const Archive = () => {
         <h2 className="text-3xl font-titleFont font-semibold">
           Other Noteworthy Projects
         </h2>
-        <p className="text-sm font-titleFont text-textGreen">
+        <p
+          style={{ color: "#0794c9" }}
+          className="text-sm font-titleFont text-textGreen"
+        >
           view the archive
         </p>
       </div>
@@ -185,7 +188,7 @@ const Archive = () => {
       <div className="mt-12 flex items-center justify-center">
         {showMore ? (
           <button
-            style={{ background: "#64FFDA" }}
+            style={{ background: "#0794C9" }}
             onClick={() => setShowMore(false)}
             className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
           >
@@ -194,7 +197,7 @@ const Archive = () => {
         ) : (
           <button
             onClick={() => setShowMore(true)}
-            style={{ background: "#64FFDA" }}
+            style={{ background: "#0794C9", color: "#fff" }}
             className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300 "
           >
             Show More

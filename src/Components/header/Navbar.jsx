@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import { AnimatePresence, motion } from "framer-motion";
 import logo from "../../assets/core-image/logo.svg";
 import menu from "../../assets/core-image/menu.png";
 import "./navbar.scss";
@@ -145,82 +146,41 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <div className={open ? "menu-lists" : "menu-not-active"}>
-        <ul>
-          <li>
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={1200}
-              onClick={() => setOpen(false)}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={1000}
-              onClick={() => setOpen(false)}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="service"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={1000}
-              onClick={() => setOpen(false)}
-            >
-              Service
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="resume"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={1000}
-              onClick={() => setOpen(false)}
-            >
-              Resume
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="project"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={1000}
-              onClick={() => setOpen(false)}
-            >
-              Project
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={1000}
-              onClick={() => setOpen(false)}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="menu-lists"
+          >
+            <ul>
+              {[
+                "Home",
+                "AboutMe",
+                "Services",
+                "Portfolio",
+                "Contact",
+                "Resume",
+              ].map((item) => (
+                <li className="flex p-text" key={item}>
+                  <Link
+                    to={item}
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    onClick={() => setOpen(false)}
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }

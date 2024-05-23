@@ -38,7 +38,9 @@ function Homepage() {
   return (
     <div id="home" className="homepage">
       <div className="left-side">
-        <span>Hello, my name is</span>
+        <span style={{ color: "#0794c9", fontWeight: "770" }}>
+          Hello, my name is
+        </span>
         <h4>Yohanis Tadese.</h4>
         <h4>I build things for the web.</h4>
         <h3>

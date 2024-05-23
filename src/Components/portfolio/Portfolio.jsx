@@ -43,7 +43,10 @@ const Portfolio = () => {
               </p>
               <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
             </div>
-            <p className="bg-[#64FFDA] text-sm md:text-base p-2 md:p-6 rounded-md  ">
+            <p
+              style={{ color: "#fff" }}
+              className="bg-[#0794C9] text-sm md:text-base p-2 md:p-6 rounded-md  "
+            >
               An Amazon clone website for visualizing personalized Amazon
               website. View your products, Add your account with{" "}
               <span className="text-textBlack">O-auth</span> and then make the
@@ -98,7 +101,10 @@ const Portfolio = () => {
               </p>
               <h3 className="text-2xl font-bold">Traveler pack easily</h3>
             </div>
-            <p className="text-sm md:text-base bg-[#64FFDA] p-2 md:p-6 rounded-md xl:-mr-16  ">
+            <p
+              style={{ color: "#fff" }}
+              className="text-sm md:text-base bg-[#0794C9] p-2 md:p-6 rounded-md xl:-mr-16  "
+            >
               Create your travel list effortlessly! Note what you can't leave
               behind and quantity. Tick off as you pack. Easily track
               essentials. Remove what you don't need. Simplify your packing
@@ -162,7 +168,10 @@ const Portfolio = () => {
                   </p>
                   <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
                 </div>
-                <p className="text-sm md:text-base bg-[#64FFDA] p-2 md:p-6 rounded-md  ">
+                <p
+                  style={{ color: "#fff" }}
+                  className="text-sm md:text-base bg-[#0794C9] p-2 md:p-6 rounded-md  "
+                >
                   An Amazon clone website for visualizing personalized Amazon
                   website. View your products, Add your account with{" "}
                   <span className="text-textBlack">O-auth</span> and then make
@@ -219,7 +228,10 @@ const Portfolio = () => {
                   </p>
                   <h3 className="text-2xl font-bold">Traveler pack easily</h3>
                 </div>
-                <p className="text-sm md:text-base bg-[#64FFDA] p-2 md:p-6 rounded-md xl:-mr-16  ">
+                <p
+                  style={{ color: "#fff" }}
+                  className="text-sm md:text-base bg-[#0794C9] p-2 md:p-6 rounded-md xl:-mr-16  "
+                >
                   Create your travel list effortlessly! Note what you can't
                   leave behind and quantity. Tick off as you pack. Easily track
                   essentials. Remove what you don't need. Simplify your packing
@@ -273,7 +285,10 @@ const Portfolio = () => {
                   </p>
                   <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
                 </div>
-                <p className="bg-[#64FFDA] text-sm md:text-base p-2 md:p-6 rounded-md  ">
+                <p
+                  style={{ color: "#fff" }}
+                  className="bg-[#0794C9] text-sm md:text-base p-2 md:p-6 rounded-md   "
+                >
                   An Amazon clone website for visualizing personalized Amazon
                   website. View your products, Add your account with{" "}
                   <span className="text-textBlack">O-auth</span> and then make
@@ -312,7 +327,7 @@ const Portfolio = () => {
       <div className="mt-12 flex items-center justify-center">
         {showMore ? (
           <button
-            style={{ background: "#64FFDA" }}
+            style={{ background: "#0794C9", color: "#fff" }}
             onClick={() => setShowMore(false)}
             className="w-36 h-12 rounded-md text-textBlack text-[13px] border border-textBlack hover:bg-hoverColor duration-300"
           >
@@ -321,7 +336,7 @@ const Portfolio = () => {
         ) : (
           <button
             onClick={() => setShowMore(true)}
-            style={{ background: "#64FFDA" }}
+            style={{ background: "#0794C9", color: "#fff" }}
             className="w-36 h-12 rounded-md text-textBlack text-[13px] border border-textBlack hover:bg-hoverColor duration-300 "
           >
             Show More
