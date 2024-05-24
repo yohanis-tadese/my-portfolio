@@ -7,7 +7,7 @@ function SideBar() {
       <div className="side">
         <li>
           <a
-            href="https://github.com/Jhontadese"
+            href="https://github.com/yohanis-tadese"
             target="_blank"
             rel="noopener noreferrer"
           >

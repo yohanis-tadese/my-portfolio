@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./homepage.scss";
 import { Link } from "react-scroll";
+import TypingSVG from "./TypingSVG";
 
 function Homepage() {
   useEffect(() => {
@@ -42,15 +43,27 @@ function Homepage() {
           Hello, my name is
         </span>
         <h4>Yohanis Tadese.</h4>
-        <h4>I build things for the web.</h4>
+        <h4>
+          {" "}
+          <TypingSVG />
+        </h4>
         <h3>
-          I'm a versatile full-stack (MERN) developer driven by a passion for
-          crafting impactful digital solutions. My strength lies in creating
-          user-friendly interfaces and robust backend systems that elevate the
-          user experience.
+          I'm a passionate and dedicated full-stack (MERN) software developer
+          driven by a passion for crafting impactful digital solutions. My
+          strength lies in creating user-friendly interfaces and robust backend
+          systems that elevate the user experience.
         </h3>
+
         <div className="buttons">
-          <button className="btn button-one">Download CV</button>
+          <button className="btn button-one">
+            <a
+              href="https://drive.google.com/file/d/1hPicWaxKUkfYPUGryv3lPRuL6o06YOPc/view?usp=drive_link"
+              target="_blank"
+              download="Yohanis_Tadese_CV.pdf"
+            >
+              Download CV
+            </a>
+          </button>
 
           <button className="btn button-two">
             <Link

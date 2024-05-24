@@ -2,13 +2,11 @@
 
 .homepage {
   display: flex;
-  // width: 100%;
   z-index: 1800;
-  height: 100vh;
+  height: auto;
 
   .left-side {
     background-image: url("../../assets/core-image/hero-top.jpg");
-    // background-image: url("../../assets/core-image/bg-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,7 +16,7 @@
     border-bottom: 3px solid #f5f8fd;
     gap: 10px;
     flex: 2.4;
-    padding-top: 100px;
+    padding-top: 70px;
     padding-bottom: 40px;
     padding-left: 8%;
     margin-top: 65px;
@@ -46,7 +44,7 @@
       font-size: 14px;
       font-weight: 500;
       line-height: 32px;
-      width: 75%;
+      width: 62%;
 
       @include lg {
         font-size: 16px;

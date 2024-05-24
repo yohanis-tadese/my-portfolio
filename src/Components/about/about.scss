@@ -104,7 +104,7 @@
       }
 
       span {
-        line-height: 27px;
+        line-height: 24px;
         font-size: 14px;
 
         @include md {
@@ -157,6 +157,7 @@
         margin-top: 20px;
         width: 20em;
         background-color: #d8d3fb;
+        border-radius: 5px;
 
         @include lg {
           width: 18em;
