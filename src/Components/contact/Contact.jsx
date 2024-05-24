@@ -168,7 +168,7 @@ const ContactMe = () => {
                 </p>
               </span>
               <h2>
-                Send Me a Message{" "}
+                Send Me a Message
                 <span>
                   <FaMessage />
                 </span>

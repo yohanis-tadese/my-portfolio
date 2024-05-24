@@ -28,7 +28,7 @@ const TypingImage = styled.img`
 const TypingSVG = () => {
   return (
     <Container>
-      <StyledLink href="https://github.com/DenverCoder1/readme-typing-svg">
+      <StyledLink>
         <TypingImage
           src="https://readme-typing-svg.herokuapp.com?lines=I'm+Full-Stack+Developer;I'm+MERN-Stack+Developer;I'm+React+Developer;&size=24&center=true&width=435&height=50&speed=3000&pause=1000"
           alt="Typing SVG"

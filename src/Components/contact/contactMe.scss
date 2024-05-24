@@ -31,6 +31,10 @@
   span {
     padding-left: 10px;
     font-size: 16px;
+
+    @include sm {
+      width: 13px;
+    }
   }
 }
 
