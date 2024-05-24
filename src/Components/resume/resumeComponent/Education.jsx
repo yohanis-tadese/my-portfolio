@@ -20,9 +20,11 @@ const Education = () => {
           <span className="text-textGreen mt-1 text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          A Bachelor of Science in Information Systems (BSIS) involves the study
-          of technology and its application in managing information for
-          businesses and organizations.
+          <span style={{ fontSize: "15px" }}>
+            A Bachelor of Science in Information Systems (BSIS) involves the
+            study of technology and its application in managing information for
+            businesses and organizations.
+          </span>
         </li>
       </ul>
 
@@ -36,14 +38,10 @@ const Education = () => {
           <span className="text-textGreen mt-1 text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          Full-Stack Web Application Development (MERN) Stack By Instructors
-          <a
-            target="blank"
-            href="https://www.udemy.com/user/jonasschmedtmann/"
-            className="text-textroyalBlue"
-          >
+          <span style={{ fontSize: "15px" }}>
+            Full-Stack Web Application Development (MERN) Stack By Instructors
             👉 Jonas schmedtmann
-          </a>
+          </span>
         </li>
       </ul>
     </motion.div>

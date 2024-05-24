@@ -24,7 +24,7 @@ module.exports = {
         textroyalBlue: "#0794C9",
         textLight: "#ccd6f6",
         // textYellow: "#2E51ED",
-        // textDark: "#8892b0",
+        // transparent: "#8892b0",
         hoverColor: "#F5F8FD",
       },
       fontFamily: {

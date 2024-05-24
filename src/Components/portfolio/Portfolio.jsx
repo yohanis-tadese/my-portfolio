@@ -23,7 +23,11 @@ const Portfolio = () => {
         {/* *************** Project one ******************** */}
         <div
           className="flex flex-col xl:flex-row gap-6"
-          style={{ border: "1px solid rgba(0, 0, 0, 0.1)", padding: "20px" }}
+          style={{
+            border: "1px solid rgba(0, 0, 0, 0.1)",
+            padding: "20px",
+            background: "#F5F8FD",
+          }}
         >
           <a
             className="w-full xl:w-1/2 h-auto relative group"
@@ -84,7 +88,11 @@ const Portfolio = () => {
         {/* *************** Project two ******************** */}
         <div
           className="flex flex-col xl:flex-row-reverse gap-6"
-          style={{ border: "1px solid rgba(0, 0, 0, 0.1)", padding: "20px" }}
+          style={{
+            border: "1px solid rgba(0, 0, 0, 0.1)",
+            padding: "20px",
+            background: "#F5F8FD",
+          }}
         >
           <a
             className="w-full xl:w-1/2 h-auto relative group"
@@ -157,6 +165,7 @@ const Portfolio = () => {
               style={{
                 border: "1px solid rgba(0, 0, 0, 0.1)",
                 padding: "20px",
+                background: "#F5F8FD",
               }}
             >
               <a
@@ -223,6 +232,7 @@ const Portfolio = () => {
               style={{
                 border: "1px solid rgba(0, 0, 0, 0.1)",
                 padding: "20px",
+                background: "#F5F8FD",
               }}
             >
               <a
@@ -286,6 +296,7 @@ const Portfolio = () => {
               style={{
                 border: "1px solid rgba(0, 0, 0, 0.1)",
                 padding: "20px",
+                background: "#F5F8FD",
               }}
             >
               <a

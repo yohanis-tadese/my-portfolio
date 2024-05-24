@@ -19,35 +19,44 @@ const Project = () => {
           <span className="text-textGreen mt-1  text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          Internship Placement System: Utilizing Full stack (MySQL, Express.js,
-          React.js, Node.js) based projects for a robust and dynamic internship
-          portal for haramaya university.
+
+          <span style={{ fontSize: "14px" }}>
+            Internship Placement System: Utilizing Full stack (MySQL,
+            Express.js, React.js, Node.js) based projects for a robust and
+            dynamic internship portal for haramaya university.
+          </span>
         </li>
 
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1  text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          Natours: Mastered modern CSS techniques, including animations and
-          responsive design, while building a dynamic tour booking website with
-          Node.js, MongoDB, and React.
+          <span style={{ fontSize: "14px" }}>
+            Natours: Mastered modern CSS techniques, including animations and
+            responsive design, while building a dynamic tour booking website
+            with Node.js, MongoDB, and React.
+          </span>
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1  text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          Abe Garage Project: Utilizing MERN stack (MongoDB, Express.js,
-          React.js, Node.js) for a robust and dynamic automotive workshop
-          management system.
+          <span style={{ fontSize: "14px" }}>
+            Abe Garage Project: Utilizing MERN stack (MongoDB, Express.js,
+            React.js, Node.js) for a robust and dynamic automotive workshop
+            management system.
+          </span>
         </li>
         <li className="text-base flex gap-2 text-dark">
           <span className="text-green mt-1 text-royalBlue  text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          Personal Portfolio Website: Designed and developed a personal
-          portfolio website showcasing skills, projects and experiences using
-          React.js and SASS. Implemented dynamic animations, responsive design
-          and seamless user experience.
+          <span style={{ fontSize: "14px" }}>
+            Personal Portfolio Website: Designed and developed a personal
+            portfolio website showcasing skills, projects and experiences using
+            React.js and SASS. Implemented dynamic animations, responsive design
+            and seamless user experience.
+          </span>
         </li>
       </ul>
     </motion.div>

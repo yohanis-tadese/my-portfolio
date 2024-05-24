@@ -27,11 +27,11 @@
 
     li {
       font-size: 14px;
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       background-color: #ffffff;
-      border: 3px solid #f5f8fd;
+      border: 1px solid #9ed9ef;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,10 +39,10 @@
 
       &:hover {
         background-color: #2196c0;
-      }
 
-      a {
-        color: #2f3450;
+        a {
+          color: #fff;
+        }
       }
     }
   }

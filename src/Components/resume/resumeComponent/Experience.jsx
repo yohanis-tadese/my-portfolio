@@ -18,12 +18,15 @@ const Experience = () => {
             <span className="text-textGreen mt-1 text-textroyalBlue">
               <FaArrowAltCircleRight />
             </span>
-            During my time at Haramaya University's Information System
-            Department, I developed diverse applications Internship Placement
-            System for my final year project. Collaborating closely with
-            students and company, I honed my skills in application development,
-            problem-solving, and teamwork. This hands-on experience laid a
-            robust foundation for my career in information systems.
+            <span style={{ fontSize: "14px" }}>
+              During my time at Haramaya University's Information System
+              Department, I developed diverse applications Internship Placement
+              System for my final year project. Collaborating closely with
+              students and company, I honed my skills in application
+              development, problem-solving, and teamwork. This hands-on
+              experience laid a robust foundation for my career in information
+              systems.
+            </span>
           </li>
         </li>
       </ul>
@@ -36,10 +39,12 @@ const Experience = () => {
           <span className="text-textGreen mt-1 text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          Under Jonas Schmedtmann's tutelage on Udemy, I delved into full-stack
-          app development. Courses like "Wild Oasis Tour Guidance" honed my UI
-          design and backend skills. His guidance boosted my confidence,
-          equipping me for varied web dev challenges.
+          <span style={{ fontSize: "14px" }}>
+            Under Jonas Schmedtmann's tutelage on Udemy, I delved into
+            full-stack app development. Courses like "Wild Oasis Tour Guidance"
+            honed my UI design and backend skills. His guidance boosted my
+            confidence, equipping me for varied web dev challenges.
+          </span>
         </li>
       </ul>
     </motion.div>
