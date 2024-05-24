@@ -37,7 +37,7 @@ function Homepage() {
   };
 
   return (
-    <div id="home" className="homepage">
+    <div id="Home" className="homepage">
       <div className="left-side">
         <span style={{ color: "#0794c9", fontWeight: "770" }}>
           Hello, my name is

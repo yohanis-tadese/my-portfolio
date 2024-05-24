@@ -52,7 +52,7 @@ const Resume = () => {
     setWorkSkill(true);
   };
   return (
-    <section id="resume" className="Myresume ">
+    <section id="Resume" className="Myresume ">
       <SectionTitle title="My formal Bio Details" titleNo="02" />
       <div className="resume-container w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">

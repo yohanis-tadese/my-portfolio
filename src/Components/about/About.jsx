@@ -5,7 +5,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 
 function About() {
   return (
-    <div id="about" className="about">
+    <div id="About" className="about">
       <div className="portfolio-title">
         <SectionTitle title="About me" />
       </div>

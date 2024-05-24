@@ -48,7 +48,7 @@
     }
     @include sm {
       width: 90%;
-      margin: 5px auto;
+      margin: 20px auto;
     }
 
     .about-detail {
@@ -57,7 +57,6 @@
       flex-direction: column;
       gap: 6px;
       margin-top: 1em;
-      text-align: justify;
       padding-right: 50px;
 
       @include lg {
@@ -169,7 +168,7 @@
         }
 
         @include sm {
-          width: 16em;
+          display: none;
         }
       }
     }

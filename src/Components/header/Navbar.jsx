@@ -65,7 +65,7 @@ function Navbar() {
           <ul>
             <li>
               <Link
-                to="home"
+                to="Home"
                 spy={true}
                 smooth={true}
                 offset={-30}
@@ -77,7 +77,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="about"
+                to="About"
                 spy={true}
                 smooth={true}
                 offset={-30}
@@ -90,7 +90,7 @@ function Navbar() {
 
             <li>
               <Link
-                to="service"
+                to="Service"
                 spy={true}
                 smooth={true}
                 offset={-30}
@@ -102,7 +102,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="resume"
+                to="Resume"
                 spy={true}
                 smooth={true}
                 offset={-30}
@@ -114,7 +114,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="project"
+                to="Project"
                 spy={true}
                 smooth={true}
                 offset={-30}
@@ -126,7 +126,7 @@ function Navbar() {
             </li>
             <li>
               <Link
-                to="contact"
+                to="Contact"
                 spy={true}
                 smooth={true}
                 offset={-30}
@@ -156,27 +156,22 @@ function Navbar() {
             className="menu-lists"
           >
             <ul>
-              {[
-                "Home",
-                "AboutMe",
-                "Services",
-                "Portfolio",
-                "Contact",
-                "Resume",
-              ].map((item) => (
-                <li className="flex p-text" key={item}>
-                  <Link
-                    to={item}
-                    spy={true}
-                    smooth={true}
-                    offset={-80}
-                    duration={500}
-                    onClick={() => setOpen(false)}
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
+              {["Home", "About", "Service", "Project", "Contact", "Resume"].map(
+                (item) => (
+                  <li className="flex p-text" key={item}>
+                    <Link
+                      to={item}
+                      spy={true}
+                      smooth={true}
+                      offset={-80}
+                      duration={500}
+                      onClick={() => setOpen(false)}
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
         )}

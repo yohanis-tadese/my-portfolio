@@ -13,7 +13,7 @@ const Portfolio = () => {
   const [showMore, setShowMore] = useState(false);
   return (
     <div
-      id="project"
+      id="Project"
       className="Myportfolio max-w-container mx-auto lgl:px-20 py-24  "
     >
       <div className="portfolio-title">

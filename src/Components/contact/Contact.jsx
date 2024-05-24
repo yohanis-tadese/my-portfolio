@@ -92,8 +92,8 @@ const ContactMe = () => {
           }
         )
         .finally(() => {
-          setIsLoading(false); // Set loading state to false after submission
-          toast.dismiss(); // Dismiss the loading toast
+          setIsLoading(false);
+          toast.dismiss();
         });
     }
   };
@@ -115,7 +115,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contact" className="contact-form">
+    <div id="Contact" className="contact-form">
       <SectionTitle title="Get In Touch Me" />
       <div className="contact-container">
         <div className="main">

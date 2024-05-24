@@ -6,7 +6,7 @@ import SectionTitle from "../SectionTitle";
 
 function Service() {
   return (
-    <div id="service" className="service">
+    <div id="Service" className="service">
       <div className="service_title">
         <SectionTitle title="core services" />
       </div>
