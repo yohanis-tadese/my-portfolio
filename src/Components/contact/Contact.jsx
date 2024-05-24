@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
+import { FaMessage } from "react-icons/fa6";
 import emailjs from "@emailjs/browser";
 import { toast, Slide } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./contactMe.scss";
-
 import SectionTitle from "../SectionTitle";
 import { FaEnvelope, FaPhone, FaTelegram } from "react-icons/fa";
 
@@ -10,96 +11,22 @@ const ContactMe = () => {
   const nameRef = useRef();
   const emailRef = useRef();
   const textAreaRef = useRef();
-
   const messageShadowRef = useRef();
   const bannerColorRef = useRef();
+
   const [banner, setBanner] = useState("");
   const [values, setValues] = useState({
     name: "",
     email: "",
     message: "",
   });
-  const [isLoading, setIsLoading] = useState(false); // Add loading state
-
-  if (values.name.length !== 0) {
-    nameRef.current.classList.remove("error");
-  }
-  if (values.email.length !== 0) {
-    emailRef.current.classList.remove("error");
-  }
-  if (values.message.length !== 0) {
-    textAreaRef.current.classList.remove("error");
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (
-      values.name.length === 0 ||
-      values.email.length === 0 ||
-      values.message.length === 0
-    ) {
-      e.preventDefault();
-      setBanner("Please fill all the required fields?");
-      document.getElementById("id").style.color = "#eb6864";
-      bannerColorRef.current.classList.add("errorColor");
-      messageShadowRef.current.classList.add("messageShadow");
-      nameRef.current.classList.add("error");
-      emailRef.current.classList.add("error");
-      textAreaRef.current.classList.add("error");
-      toast.error("Please fill all the required fields?", {
-        theme: "colored",
-        transition: Slide,
-      });
-      console.log("Please fill all the required fields?");
-    } else {
-      setIsLoading(true); // Set loading state to true
-      toast.info("Sending email...", {
-        // Display loading toast
-        theme: "colored",
-        transition: Slide,
-        autoClose: false, // Don't auto close loading toast
-      });
-      emailjs
-        .sendForm(
-          "service_fgrh799",
-          "template_8tja4pd",
-          document.getElementById("yourFormId"),
-          "lRPjByGWA0-yW1IPX"
-        )
-        .then(
-          (response) => {
-            setBanner(
-              "Thank you! Your email has been received, and I will reply shortly."
-            );
-            console.log("SUCCESS!", response);
-            document.getElementById("id").style.color = "#39ac73";
-            messageShadowRef.current.classList.add("messageShadow");
-            nameRef.current.classList.remove("error");
-            emailRef.current.classList.remove("error");
-            textAreaRef.current.classList.remove("error");
-            toast.success("Your email has been sent successfully!", {
-              theme: "colored",
-              transition: Slide,
-            });
-            setValues({
-              name: "",
-              email: "",
-              message: "",
-            });
-          },
-          (error) => {
-            console.log("FAILED...", error);
-          }
-        )
-        .finally(() => {
-          setIsLoading(false);
-          toast.dismiss();
-        });
-    }
-  };
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    if (banner === "Thank you! Your email has been received.") {
+    if (
+      banner ===
+      "Thank you! Your email has been received, and I will reply shortly."
+    ) {
       setTimeout(() => {
         setBanner("");
         messageShadowRef.current.classList.remove("messageShadow");
@@ -114,50 +41,124 @@ const ContactMe = () => {
     }));
   };
 
+  const handleValidation = () => {
+    let isValid = true;
+    if (values.name.trim() === "") {
+      nameRef.current.classList.add("error");
+      isValid = false;
+    } else {
+      nameRef.current.classList.remove("error");
+    }
+    if (values.email.trim() === "") {
+      emailRef.current.classList.add("error");
+      isValid = false;
+    } else {
+      emailRef.current.classList.remove("error");
+    }
+    if (values.message.trim() === "") {
+      textAreaRef.current.classList.add("error");
+      isValid = false;
+    } else {
+      textAreaRef.current.classList.remove("error");
+    }
+    return isValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!handleValidation()) {
+      setBanner("Please fill all the required fields?");
+      document.getElementById("id").style.color = "#eb6864";
+      bannerColorRef.current.classList.add("errorColor");
+      messageShadowRef.current.classList.add("messageShadow");
+      toast.error("Please fill all the required fields?", {
+        theme: "colored",
+        transition: Slide,
+      });
+      return;
+    }
+
+    setIsLoading(true);
+    toast.info("Sending email...", {
+      theme: "colored",
+      transition: Slide,
+      autoClose: false,
+    });
+
+    emailjs
+      .sendForm(
+        "service_fgrh799",
+        "template_8tja4pd",
+        document.getElementById("yourFormId"),
+        "lRPjByGWA0-yW1IPX"
+      )
+      .then(
+        (response) => {
+          setBanner(
+            "Thank you! Your email has been received, and I will reply shortly."
+          );
+          document.getElementById("id").style.color = "#39ac73";
+          messageShadowRef.current.classList.add("messageShadow");
+          toast.success("Your email has been sent successfully!", {
+            theme: "colored",
+            transition: Slide,
+          });
+          setValues({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          toast.error("Failed to send the email. Please try again later.", {
+            theme: "colored",
+            transition: Slide,
+          });
+        }
+      )
+      .finally(() => {
+        setIsLoading(false);
+        toast.dismiss();
+      });
+  };
+
   return (
     <div id="Contact" className="contact-form">
-      <SectionTitle title="Get In Touch Me" />
+      <SectionTitle title="Get In Touch With Me" />
       <div className="contact-container">
         <div className="main">
           <div className="form-img">
-            <div className="form-img">
-              <a
-                href="mailto:yohanistadese06@gmail.com"
-                target="blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  <s>
-                    <FaEnvelope />
-                  </s>
-                  <i>Yohanistadese06@gmail.com</i>
-                </span>
-              </a>
-              <a
-                href="tel:+251984751233"
-                target="blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  <s>
-                    <FaPhone />
-                  </s>
-                  <i>Phone: +251 984751233</i>
-                </span>
-              </a>
-              <a
-                href="https://t.me/yohanistadese"
-                target="blank"
-                rel="noopener noreferrer"
-              >
-                <span>
-                  <s>
-                    <FaTelegram />
-                  </s>
-                  <i>Telegram: @yohanistadese</i>
-                </span>
-              </a>
-            </div>
+            <a
+              href="mailto:yohanistadese06@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <FaEnvelope />
+                <i>Yohanistadese06@gmail.com</i>
+              </span>
+            </a>
+            <a
+              href="tel:+251984751233"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <FaPhone />
+                <i>Phone: +251 984751233</i>
+              </span>
+            </a>
+            <a
+              href="https://t.me/yohanistadese"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <FaTelegram />
+                <i>Telegram: @yohanistadese</i>
+              </span>
+            </a>
           </div>
           <div className="content">
             <form method="POST" id="yourFormId" onSubmit={handleSubmit}>
@@ -166,11 +167,13 @@ const ContactMe = () => {
                   {banner}
                 </p>
               </span>
-
-              <h2>Send Me a Message 👇</h2>
-
+              <h2>
+                Send Me a Message{" "}
+                <span>
+                  <FaMessage />
+                </span>
+              </h2>
               <br />
-
               <input
                 type="text"
                 name="name"
@@ -181,19 +184,18 @@ const ContactMe = () => {
               />
               <input
                 type="email"
+                name="email"
+                placeholder="Enter your email"
                 ref={emailRef}
                 onChange={handleChange}
                 value={values.email}
-                name="email"
-                placeholder="Enter your email"
               />
               <textarea
-                ref={textAreaRef}
-                type="text"
-                onChange={handleChange}
-                value={values.message}
                 name="message"
                 placeholder="Your message"
+                ref={textAreaRef}
+                onChange={handleChange}
+                value={values.message}
                 style={{
                   paddingLeft: "4.3%",
                   paddingTop: "5%",
