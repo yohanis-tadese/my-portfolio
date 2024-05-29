@@ -31,7 +31,7 @@ const Education = () => {
       <br />
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">Udemy</h3>
       <p className="text-sm mt-1 font-medium text-textroyalBlue">
-        June 2022 - 2024
+        January 2022 - 2024
       </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
@@ -40,7 +40,15 @@ const Education = () => {
           </span>
           <span style={{ fontSize: "15px" }}>
             Full-Stack Web Application Development (MERN) Stack By Instructors
-            👉 Jonas schmedtmann
+            👉{" "}
+            <a
+              href="https://www.udemy.com/user/jonasschmedtmann/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none", color: "#2196c0" }}
+            >
+              Jonas Schmedtmann
+            </a>
           </span>
         </li>
       </ul>

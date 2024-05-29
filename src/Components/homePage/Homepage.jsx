@@ -44,11 +44,10 @@ function Homepage() {
         </span>
         <h4>Yohanis Tadese.</h4>
         <h4>
-          {" "}
           <TypingSVG />
         </h4>
         <h3>
-          I'm a passionate and dedicated full-stack (MERN) software developer
+          I'm a passionate and dedicated Full-Stack (MERN) Software Developer
           driven by a passion for crafting impactful digital solutions. My
           strength lies in creating user-friendly interfaces and robust backend
           systems that elevate the user experience.
@@ -67,10 +66,10 @@ function Homepage() {
 
           <button className="btn button-two">
             <Link
-              to="portfolio"
+              to="Project"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-30}
               duration={1000}
             >
               My Work

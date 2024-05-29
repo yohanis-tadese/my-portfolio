@@ -135,7 +135,9 @@ const ContactMe = () => {
               rel="noopener noreferrer"
             >
               <span>
-                <FaEnvelope />
+                <s>
+                  <FaEnvelope />
+                </s>
                 <i>Yohanistadese06@gmail.com</i>
               </span>
             </a>
@@ -145,7 +147,9 @@ const ContactMe = () => {
               rel="noopener noreferrer"
             >
               <span>
-                <FaPhone />
+                <s>
+                  <FaPhone />
+                </s>
                 <i>Phone: +251 984751233</i>
               </span>
             </a>
@@ -155,7 +159,9 @@ const ContactMe = () => {
               rel="noopener noreferrer"
             >
               <span>
-                <FaTelegram />
+                <s>
+                  <FaTelegram />
+                </s>
                 <i>Telegram: @yohanistadese</i>
               </span>
             </a>

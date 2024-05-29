@@ -1,4 +1,6 @@
-import amazonImg from "../../assets/images/amazonImg.png";
+import natours from "../../assets/images/natours.jpg";
+import abegarage from "../../assets/images/abegarage.jpg";
+import placement from "../../assets/images/placement.jpg";
 import Travel from "../../assets/images/travelList.jpg";
 import Bankist from "../../assets/images/bankist.jpg";
 import { motion } from "framer-motion";
@@ -32,14 +34,14 @@ const Portfolio = () => {
         >
           <a
             className="w-full xl:w-1/2 h-auto relative group"
-            href="https://jhon21.netlify.app/"
+            href="https://github.com/yohanis-tadese/Internship-placement-system"
             target="_blank"
           >
             <div>
               <img
                 className="w-full h-full object-contain"
-                src={amazonImg}
-                alt="amazonImg"
+                src={placement}
+                alt="placement-image"
               />
               <div className="absolute w-full h-full bg-textBlack/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
@@ -49,35 +51,37 @@ const Portfolio = () => {
               <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold ">
                 Featured Project
               </p>
-              <h3 className="text-2xl font-bold">Amazon Website Clone</h3>
+              <h3 className="text-2xl font-bold">
+                Internship Placement System
+              </h3>
             </div>
             <p
               style={{ color: "#fff" }}
               className="bg-[#0794C9] text-sm md:text-base p-2 md:p-6 rounded-md  "
             >
-              An Amazon clone website for visualizing personalized Amazon
-              website. View your products, Add your account with{" "}
-              <span className="text-textBlack">O-auth</span> and then make the
-              purchage using <span className="text-textBlack">stripe</span>.
+              Developed an Internship Placement System where students are
+              matched with companies using the Stable Roommates Problem
+              algorithm. Students can view their assigned company placements and
+              relevant details and more.
             </p>
             <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-              <li>Nextjs</li>
-              <li>Typescript</li>
-              <li>Next-auth</li>
-              <li>Stripe</li>
-              <li>Vercel Deployment</li>
+              <li>ReactJs</li>
+              <li>Styled-CSS</li>
+              <li>NodeJs</li>
+              <li>ExpressJs</li>
+              <li>MySql</li>
             </ul>
             <div className="text-2xl flex gap-4">
               <a
                 className="hover:text-textBlack duration-300"
-                href="https://github.com/Jhontadese"
+                href="https://github.com/yohanis-tadese/Internship-placement-system"
                 target="_blank"
               >
                 <TbBrandGithub />
               </a>
               <a
                 className="hover:text-textBlack duration-300"
-                href="https://github.com/Jhontadese"
+                href="https://github.com/yohanis-tadese/Internship-placement-system"
                 target="_blank"
               >
                 <RxOpenInNewWindow />
@@ -163,14 +167,14 @@ const Portfolio = () => {
       >
         <a
           className="w-full xl:w-1/2 h-auto relative group"
-          href="https://github.com/Jhontadese"
+          href="https://github.com/yohanis-tadese/abe-garage"
           target="_blank"
         >
           <div>
             <img
               className="w-full h-full object-contain"
-              src={noorShop}
-              alt="noorShop"
+              src={abegarage}
+              alt="abegarage"
             />
             <div className="absolute w-full h-full bg-textBlack/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
           </div>
@@ -180,28 +184,27 @@ const Portfolio = () => {
             <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold">
               Featured Project
             </p>
-            <h3 className="text-2xl font-bold">Apple Website Clone</h3>
+            <h3 className="text-2xl font-bold">Abe Garage</h3>
           </div>
           <p
             style={{ color: "#fff" }}
             className="text-sm md:text-base bg-[#0794C9] p-2 md:p-6 rounded-md  "
           >
-            An Amazon clone website for visualizing personalized Amazon website.
-            View your products, Add your account with{" "}
-            <span className="text-textBlack">O-auth</span> and then make the
-            purchage using <span className="text-textBlack">stripe</span>.
+            Abe garage management system designed to streamline operations and
+            enhance efficiency, built using modern technologies such as React.js
+            for the frontend and Node.js with MySQL for the backend
           </p>
           <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-            <li>Nextjs</li>
-            <li>Typescript</li>
-            <li>Next-auth</li>
-            <li>Stripe</li>
-            <li>Vercel Deployment</li>
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>ExpressJS</li>
+            <li>JWT</li>
+            <li>MySQL</li>
           </ul>
           <div className="text-2xl flex gap-4">
             <a
               className="hover:text-textGreen duration-300"
-              href="https://github.com/Jhontadese"
+              href="https://github.com/yohanis-tadese/abe-garage"
               target="_blank"
             >
               <TbBrandGithub />
@@ -209,7 +212,7 @@ const Portfolio = () => {
 
             <a
               className="hover:text-textGreen duration-300"
-              href="https://github.com/Jhontadese"
+              href="https://github.com/yohanis-tadese/abe-garage"
               target="_blank"
             >
               <RxOpenInNewWindow />
@@ -300,14 +303,14 @@ const Portfolio = () => {
             >
               <a
                 className="w-full xl:w-1/2 h-auto relative group"
-                href="https://jhon21.netlify.app/"
+                href="https://github.com/yohanis-tadese/natours"
                 target="_blank"
               >
                 <div>
                   <img
                     className="w-full h-full object-contain"
-                    src={amazonImg}
-                    alt="amazonImg"
+                    src={natours}
+                    alt="natours-tour-image"
                   />
                   <div className="absolute w-full h-full bg-textBlack/10 rounded-lg top-0 left-0 group-hover:bg-transparent duration-300"></div>
                 </div>
@@ -317,36 +320,37 @@ const Portfolio = () => {
                   <p className="font-titleFont text-textBlack text-sm tracking-wide text-textroyalBlue fw-bold">
                     Featured Project
                   </p>
-                  <h3 className="text-2xl font-bold">Amazon Clone 2.0</h3>
+                  <h3 className="text-2xl font-bold">
+                    Natours tour and travel
+                  </h3>
                 </div>
                 <p
                   style={{ color: "#fff" }}
                   className="bg-[#0794C9] text-sm md:text-base p-2 md:p-6 rounded-md   "
                 >
-                  An Amazon clone website for visualizing personalized Amazon
-                  website. View your products, Add your account with{" "}
-                  <span className="text-textBlack">O-auth</span> and then make
-                  the purchage using{" "}
-                  <span className="text-textBlack">stripe</span>.
+                  An outstanding tour booking web application built with
+                  Node.js, Express, and MongoDB, featuring a seamless payment
+                  system through Stripe for enhanced user experience.
                 </p>
                 <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-                  <li>Nextjs</li>
-                  <li>Typescript</li>
-                  <li>Next-auth</li>
+                  <li>NodeJs</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>Mailtrap</li>
                   <li>Stripe</li>
-                  <li>Vercel Deployment</li>
+                  <li>JWT</li>
                 </ul>
                 <div className="text-2xl flex gap-4">
                   <a
                     className="hover:text-textBlack duration-300"
-                    href="https://github.com/Jhontadese"
+                    href="https://github.com/yohanis-tadese/natours"
                     target="_blank"
                   >
                     <TbBrandGithub />
                   </a>
                   <a
                     className="hover:text-textBlack duration-300"
-                    href="https://github.com/Jhontadese"
+                    href="https://github.com/yohanis-tadese/natours"
                     target="_blank"
                   >
                     <RxOpenInNewWindow />

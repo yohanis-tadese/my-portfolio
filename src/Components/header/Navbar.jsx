@@ -156,14 +156,14 @@ function Navbar() {
             className="menu-lists"
           >
             <ul>
-              {["Home", "About", "Service", "Project", "Contact", "Resume"].map(
+              {["Home", "About", "Service", "Resume", "Project", "Contact"].map(
                 (item) => (
                   <li className="flex p-text" key={item}>
                     <Link
                       to={item}
                       spy={true}
                       smooth={true}
-                      offset={-80}
+                      offset={-50}
                       duration={500}
                       onClick={() => setOpen(false)}
                     >

@@ -19,13 +19,13 @@ const Experience = () => {
               <FaArrowAltCircleRight />
             </span>
             <span style={{ fontSize: "14px" }}>
-              During my time at Haramaya University's Information System
-              Department, I developed diverse applications Internship Placement
-              System for my final year project. Collaborating closely with
-              students and company, I honed my skills in application
-              development, problem-solving, and teamwork. This hands-on
-              experience laid a robust foundation for my career in information
-              systems.
+              During my tenure at Haramaya University's Information System
+              Department, I spearheaded the development of various applications,
+              including Internship Placement System for my final year project.
+              Through close collaboration with fellow students and industry
+              partners, I refined my skills in application development,
+              problem-solving, and teamwork. This hands-on experience laid a
+              solid foundation for my career in information systems.
             </span>
           </li>
         </li>
@@ -40,10 +40,11 @@ const Experience = () => {
             <FaArrowAltCircleRight />
           </span>
           <span style={{ fontSize: "14px" }}>
-            Under Jonas Schmedtmann's tutelage on Udemy, I delved into
-            full-stack app development. Courses like "Wild Oasis Tour Guidance"
-            honed my UI design and backend skills. His guidance boosted my
-            confidence, equipping me for varied web dev challenges.
+            Under the mentorship of Jonas Schmedtmann on Udemy, I developed
+            natours application, a project aimed at honing my skills in both
+            frontend and backend development. His guidance not only boosted my
+            confidence but also equipped me to overcome diverse challenges in
+            the realm of web development.
           </span>
         </li>
       </ul>

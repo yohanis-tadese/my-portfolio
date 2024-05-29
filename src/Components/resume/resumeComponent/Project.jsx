@@ -42,7 +42,7 @@ const Project = () => {
             <FaArrowAltCircleRight />
           </span>
           <span style={{ fontSize: "14px" }}>
-            Abe Garage Project: Utilizing MERN stack (MongoDB, Express.js,
+            Abe Garage Project: Utilizing MERN stack (MySQL, Express.js,
             React.js, Node.js) for a robust and dynamic automotive workshop
             management system.
           </span>

@@ -40,8 +40,8 @@ const Skill = () => {
           <span className="text-textGreen mt-1 text-textroyalBlue">
             <FaArrowAltCircleRight />
           </span>
-          <span className="text-textroyalBlue"> Tools & Deployment:</span>{" "}
-          Vercel | AWS | Heroku | Figma | Git
+          <span className="text-textroyalBlue"> Tools & Deployment:</span> Figma
+          | Git | Vercel | AWS | Heroku
         </li>
       </ul>
     </motion.div>
