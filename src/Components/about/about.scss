@@ -166,10 +166,6 @@
           width: 20em;
           margin-left: -10px;
         }
-
-        @include sm {
-          display: none;
-        }
       }
     }
   }

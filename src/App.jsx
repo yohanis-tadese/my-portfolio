@@ -10,16 +10,30 @@ import Resume from "./Components/resume/Resume";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
 import Spinner from "./Components/spinner/Spinner";
+import Certeficate from "./Components/certeficate/Certeficate";
+import Skills from "./Components/skill/Skills";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     // Simulate loading data
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
+    const loadData = async () => {
+      try {
+        await new Promise((resolve) => setTimeout(resolve, 1500));
+        setLoading(false);
+      } catch (error) {
+        setError(error);
+      }
+    };
+
+    loadData();
   }, []);
+
+  if (error) {
+    return <div className="error">Error: {error.message}</div>;
+  }
 
   return (
     <div className="app">
@@ -31,9 +45,11 @@ function App() {
           <Navbar />
           <Homepage />
           <About />
+          {/* <Skills /> */}
           <Services />
           <Resume />
           <Portfolio />
+          <Certeficate />
           <Contact />
           <Footer />
         </>
