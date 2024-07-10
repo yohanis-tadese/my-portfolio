@@ -16,7 +16,7 @@ function SideBar() {
         </li>
         <li>
           <a
-            href="YOUR_LINKEDIN_PROFILE_URL"
+            href="https://www.linkedin.com/in/yohanis-tadese-0368a8318/"
             target="_blank"
             rel="noopener noreferrer"
           >
