@@ -9,9 +9,6 @@ import SideBar from "./Components/sideBar/SideBar";
 import Resume from "./Components/resume/Resume";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/footer/Footer";
-// import Certeficate from "./Components/certeficate/Certeficate";
-// import Spinner from "./Components/spinner/Spinner";
-// import Skills from "./Components/skill/Skills";
 
 function App() {
   return (
@@ -20,11 +17,9 @@ function App() {
       <Navbar />
       <Homepage />
       <About />
-      {/* <Skills /> */}
       <Services />
       <Resume />
       <Portfolio />
-      {/* <Certeficate /> */}
       <Contact />
       <Footer />
     </div>

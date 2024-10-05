@@ -47,17 +47,11 @@
     border-color: #0794c9;
 
     @include lg {
-      display: flex;
-      flex-direction: column;
       padding: 10px 20px 10px 30px;
-    }
-    @include sm {
-      width: 90%;
-      margin: 20px auto;
     }
 
     .about-detail {
-      flex: 2.5;
+      flex: 2;
       display: flex;
       flex-direction: column;
       gap: 6px;
@@ -81,14 +75,10 @@
         font-size: 1.8em;
         color: #222222;
         font-weight: 700;
-        font-family: var(--font-base6);
+        font-family: var(--font-base0);
 
         @include md {
-          font-size: 1.4em;
-        }
-
-        @include sm {
-          font-size: 1.2em;
+          font-size: 1.2rem;
         }
       }
 
@@ -154,9 +144,6 @@
     }
 
     .about-image {
-      flex: 1.2;
-      margin-right: 10px;
-
       img {
         margin-top: 20px;
         width: 20em;
@@ -168,10 +155,12 @@
         }
 
         @include md {
-          width: 20em;
-          margin-left: -10px;
+          display: none;
         }
       }
+    }
+    @include lg {
+      flex: 1;
     }
   }
 }

@@ -53,13 +53,13 @@
       }
 
       @include md {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 28px;
         width: 85%;
       }
 
       @include sm {
-        font-size: 16px;
+        font-size: 12px;
         line-height: 28px;
         width: 100%;
       }

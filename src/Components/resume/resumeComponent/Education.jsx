@@ -14,7 +14,7 @@ const Education = () => {
         title="Haramaya University, Ethiopia"
         description="(BSIS) A Bachelor of Science in Information Systems"
         link="https://www.udemy.com/user/jonasschmedtmann/"
-        linkText="See tempo Document"
+        // linkText="See tempo Document"
       />
       <br />
       <ResumeItem

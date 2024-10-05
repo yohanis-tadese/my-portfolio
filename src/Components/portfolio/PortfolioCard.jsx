@@ -22,7 +22,7 @@ const PortfolioCard = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h3 className="text-xl md:text-lg font-bold text-gray-800 tracking-wide mb-2 transition-transform duration-300 uppercase">
+          <h3 className="text-sm md:text-lg font-bold text-gray-800 tracking-wide mb-2 transition-transform duration-300 uppercase">
             {project.title}
           </h3>
           <div className="image-container">
