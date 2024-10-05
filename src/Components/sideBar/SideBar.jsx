@@ -4,7 +4,7 @@ import "./sideBar.scss";
 function SideBar() {
   return (
     <div className="sideBar">
-      <div className="side">
+      <div className="side relative">
         <li>
           <a
             href="https://github.com/yohanis-tadese"

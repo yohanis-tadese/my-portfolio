@@ -11,16 +11,80 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Goldman:wght@400;700&family=Mea+Culpa&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 :root {
+  --font-base0: "Lato", sans-serif;
   --font-base1: "DM Sans", sans-serif;
   --font-base2: "Goldman", cursive;
   --font-base3: "Open Sans", sans-serif;
   --font-base4: "Poppins", sans-serif;
   --font-base5: "Roboto", sans-serif;
+  --font-base6: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-base0);
 }
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+.modal-overlay {
+  z-index: 3000;
+}
+
+.dotted-border {
+  border-width: 0.1rem;
+  border-style: dotted;
+  border-color: #0794c9;
+  padding: 10px;
+  margin: 10px;
+  width: 95%;
+}
+
+.dotted-border-two {
+  @extend .dotted-border;
+  border-width: 0.1rem;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+
+  .image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #2bb5cd, #1893a9);
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: filter 0.3s ease;
+  }
+
+  &:hover {
+    .image-overlay {
+      opacity: 0;
+    }
+
+    img {
+      filter: none;
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./homepage.scss";
 import { Link } from "react-scroll";
 import TypingSVG from "./TypingSVG";
@@ -47,7 +47,7 @@ function Homepage() {
           <TypingSVG />
         </h4>
         <h3>
-          I'm a passionate and dedicated Full-Stack (MERN) Software Developer
+          I&apos;am a passionate and dedicated Full-Stack Software Developer
           driven by a passion for crafting impactful digital solutions. My
           strength lies in creating user-friendly interfaces and robust backend
           systems that elevate the user experience.

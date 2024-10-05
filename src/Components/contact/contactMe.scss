@@ -32,7 +32,7 @@
     padding-left: 10px;
     font-size: 16px;
 
-    @include sm {
+    @include md {
       width: 13px;
     }
   }
@@ -44,6 +44,11 @@
   margin: 30px 20px;
   box-shadow: 0px 0px 5px 5px #d1d0d045;
   border-radius: 5px;
+  background: #fff;
+
+  border-width: 0.13rem;
+  border-style: dotted;
+  border-color: #0794c9;
 }
 
 form {
@@ -60,19 +65,19 @@ form {
 }
 
 .form-img {
-  flex-basis: 50%;
-  background: #fff;
+  flex-basis: 40%;
   background-size: cover;
+  margin-top: 33px;
 
   span {
     display: flex;
     align-items: center;
-    border: 2px solid #f5f8fd;
-    padding: 15px 7px;
-    margin: 60px 10px 10px 10px;
+    border: 1.5px solid #f5f8fd;
+    padding: 10px 7px;
+    margin: 30px 10px 7px 7px;
     cursor: pointer;
     margin-left: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
 
     @include md {
       margin-top: 10px;
@@ -86,7 +91,11 @@ form {
 
     i {
       font-style: normal;
-      padding-left: 15px;
+      margin-left: 8px;
+
+      &:hover {
+        color: #3cc9e5;
+      }
     }
   }
 }
@@ -163,32 +172,23 @@ textarea {
 .contact-form button {
   font-size: 18px;
   color: #f5f8fd;
-  width: 35%;
-  padding: 13px 17px;
-  background-color: #0794c9;
+  width: 20%;
+  padding: 7px 12px;
+  background-image: linear-gradient(90deg, #0794c9, #5a9137);
   margin-top: 20px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
   font-family: var(--font-base5);
+
+  &:hover {
+    background-image: linear-gradient(90deg, #5a9137, #0794c9);
+  }
 
   @include lg {
     width: 46%;
   }
   @include md {
-    width: 37%;
-  }
-  @include sm {
     width: 45%;
-  }
-
-  &:hover {
-    background-color: #47a7ca;
-    color: white;
-  }
-}
-
-@media (max-width: 536px) {
-  .contact-form .form-img {
-    display: none;
+    padding: 10px 20px;
   }
 }
 

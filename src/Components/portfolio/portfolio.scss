@@ -34,6 +34,17 @@
     }
   }
 
+  .show-more-less {
+    background-image: linear-gradient(90deg, #0794c9, #5a9137);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 1rem;
+
+    &:hover {
+      background-image: linear-gradient(90deg, #5a9137, #0794c9);
+    }
+  }
+
   img {
     border: 1px solid #99e4ff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);

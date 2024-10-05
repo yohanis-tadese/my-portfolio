@@ -1,7 +1,13 @@
+@import "../../responsive.scss";
+
 .footer {
-  padding: 20px;
-  background-color: #0794C9;
+  padding: 1rem;
+  background-image: linear-gradient(90deg, #0794c9, #5a9137, #0794c9);
   text-align: center;
   font-size: 15px;
   color: #fff;
+
+  @include md {
+    font-size: 13px;
+  }
 }

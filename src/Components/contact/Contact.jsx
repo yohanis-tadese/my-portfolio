@@ -5,7 +5,13 @@ import { toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./contactMe.scss";
 import SectionTitle from "../SectionTitle";
-import { FaEnvelope, FaPhone, FaTelegram } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+  FaTelegram,
+} from "react-icons/fa";
 
 const ContactMe = () => {
   const nameRef = useRef();
@@ -138,7 +144,7 @@ const ContactMe = () => {
                 <s>
                   <FaEnvelope />
                 </s>
-                <i>Yohanistadese06@gmail.com</i>
+                <i>yohanistadese06@gmail.com</i>
               </span>
             </a>
             <a
@@ -150,7 +156,7 @@ const ContactMe = () => {
                 <s>
                   <FaPhone />
                 </s>
-                <i>Phone: +251 984751233</i>
+                <i>+251 984751233</i>
               </span>
             </a>
             <a
@@ -162,10 +168,35 @@ const ContactMe = () => {
                 <s>
                   <FaTelegram />
                 </s>
-                <i>Telegram: @yohanistadese</i>
+                <i>@yohanistadese</i>
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yohanis-tadese/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <s>
+                  <FaLinkedin />
+                </s>
+                <i>@yohanis-tadese</i>
+              </span>
+            </a>
+            <a
+              href="https://github.com/yohanis-tadese"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>
+                <s>
+                  <FaGithub />
+                </s>
+                <i>@yohanis-tadese</i>
               </span>
             </a>
           </div>
+
           <div className="content">
             <form method="POST" id="yourFormId" onSubmit={handleSubmit}>
               <span ref={messageShadowRef} id="message" className="message">

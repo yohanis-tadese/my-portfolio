@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
-import logo from "../../assets/core-image/logo.svg";
+import logo from "../../assets/core-image/my-logo.jpg";
 import menu from "../../assets/core-image/menu.png";
 import "./navbar.scss";
 
@@ -57,7 +57,7 @@ function Navbar() {
     <>
       <nav className={scrolling ? "nav-scroll" : ""}>
         <div className="leftside">
-          <Link to="home" spy={true} smooth={true} offset={-10} duration={1000}>
+          <Link to="Home" spy={true} smooth={true} offset={-10} duration={1000}>
             <img src={logo} alt="my-personal logo" />
           </Link>
         </div>

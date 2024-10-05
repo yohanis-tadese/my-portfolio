@@ -1,5 +1,5 @@
 import "./about.scss";
-import my_image from "../../assets/core-image/profile2.png";
+import my_image from "../../assets/core-image/profile.png";
 import SectionTitle from "../SectionTitle";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -20,7 +20,7 @@ function About() {
         </div>
 
         <div className="about-detail">
-          <h3>Full Stack (MERN) Developer </h3>
+          <h3>A passionate Full-stack Developer </h3>
           <span>
             Hello! I'm Yohanis Tadese and I'm passionate about bringing ideas to
             life on the internet. my expertise lies in crafting robust and
@@ -35,6 +35,7 @@ function About() {
             collaborative environments where I can contribute my creativity and
             technical prowess to drive projects to success.
           </span>
+
           <ul>
             <h4>Here are a Few Highlights:</h4>
             <li>
@@ -65,7 +66,7 @@ function About() {
               <span>
                 <FaArrowAltCircleRight />
               </span>
-              <i>Managing database (MySQL, MongoDB).</i>
+              <i>Managing database (MySQL, PostgreSQL, MongoDB).</i>
             </li>
           </ul>
         </div>
