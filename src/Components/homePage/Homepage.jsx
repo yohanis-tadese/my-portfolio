@@ -56,7 +56,7 @@ function Homepage() {
         <div className="buttons">
           <button className="btn button-one">
             <a
-              href="https://drive.google.com/file/d/1hPicWaxKUkfYPUGryv3lPRuL6o06YOPc/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1zGzSTNuRXbZY3D9SInHbW-hZaloYUWEk/view?usp=drive_link"
               target="_blank"
               download="Yohanis_Tadese_CV.pdf"
             >
